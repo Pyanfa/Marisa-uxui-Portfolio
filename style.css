@@ -1,0 +1,184 @@
+/* ล้างค่าเริ่มต้นของ Browser */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face
+{
+	font-family:"GOTHICB";
+	src:url("Font/GOTHICB.ttf");
+}
+
+/* พื้นหลังทั้งหน้า */
+
+body{
+
+    width:100vw;
+    height:100vh;
+
+    background-image:url("bg.svg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+
+/* กล่องกลาง */
+
+.container{
+    text-align:center;
+    display:flex;
+}
+
+
+/* กลุ่มปุ่ม */
+
+.button-group{
+
+    display:flex;
+
+    gap:40px;
+
+    justify-content:center;
+}
+
+
+/* ปุ่มทุกปุ่ม */
+
+.button{
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+
+    box-shadow:
+    0px 8px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ขนาดไอคอน */
+
+.button img{
+
+    width:120px;
+
+    height:auto;
+}
+
+
+/* สีแต่ละปุ่ม */
+
+.pc{
+    background:#5A240C;
+}
+
+.tablet{
+    background:#5A240C;
+}
+
+.mobile{
+    background:#6C6C6C;
+}
+
+
+/* Hover */
+
+.button:hover{
+
+    background:#DD948B;
+
+    transform:translateY(-5px);
+}
+
+
+/* ตอนคลิก */
+
+.button:active{
+
+    background:#E07065;
+
+    transform:scale(0.95);
+}
+
+
+/* ข้อความ */
+
+.title{
+    
+    font-family: "GOTHICB";
+
+    //font-family: Agency FB;
+
+    margin-top:50px;
+
+    font-size:24px;
+
+    font-weight:550;
+
+    letter-spacing:3px;
+
+    color:#555;
+}
+
+
+
+/* Mobile */
+
+@font-face
+{
+	font-family:"GOTHIC";
+	src:url("Font/GOTHIC.ttf");
+}
+
+@media (max-width:768px){
+
+   .title{
+	
+	order:1;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	font-family:"GOTHIC";
+	margin-top:30px;
+        font-size:20px;
+    }
+
+
+    .button-group{
+
+	order:2;
+        flex-direction:column;
+	gap:25px;
+        align-items:center;
+    }
+
+    .button{
+
+        width:140px;
+        height:140px;
+    }
+
+    .button img{
+
+    width:80px;
+
+    height:auto;
+}
+
