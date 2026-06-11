@@ -143,27 +143,27 @@ body{
 
 @font-face
 {
-	font-family:"GOTHICB";
-	src:url("Font/GOTHICB.TTF");
+	font-family:"GOTHIC";
+	src:url("Font/GOTHIC.TTF");
 }
 @media (max-width:768px){
 
    .title{
 	
-	order:1;
+	/*order:1;*/
 	padding-left: 20px;
 	padding-right: 20px;
 
-	font-family:"GOTHICB";
-	/*margin-top:30px;*/
-	margin-bottom:30px;
+	font-family:"GOTHIC";
+	margin-top:30px;
+	/*margin-bottom:30px;*/
         font-size:20px;
     }
 
 
     .button-group{
 
-	order:2;
+	/*order:2;*/
         flex-direction:column;
 	gap:25px;
         align-items:center;
