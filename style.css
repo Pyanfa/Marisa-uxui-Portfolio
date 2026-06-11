@@ -141,12 +141,11 @@ body{
 
 /* Mobile */
 
-/*@font-face
+@font-face
 {
-	font-family:"GOTHIC";
-	src:url("Font/GOTHIC.TTF");
-}*/
-
+	font-family:"GOTHICB";
+	src:url("Font/GOTHICB.TTF");
+}
 @media (max-width:768px){
 
    .title{
