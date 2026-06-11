@@ -9,7 +9,7 @@
 @font-face
 {
 	font-family:"GOTHICB";
-	src:url("Font/GOTHICB.ttf");
+	src:url("Font/GOTHICB.TTF");
 }
 
 /* พื้นหลังทั้งหน้า */
@@ -144,7 +144,7 @@ body{
 @font-face
 {
 	font-family:"GOTHIC";
-	src:url("Font/GOTHIC.ttf");
+	src:url("Font/GOTHIC.TTF");
 }
 
 @media (max-width:768px){
