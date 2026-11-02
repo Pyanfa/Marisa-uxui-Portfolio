@@ -30,9 +30,12 @@
           <div class="flex flex-col">
             <span
               class="text-[20px] font-medium tracking-tight text-[#505050] leading-tight"
+              data-i18n="name"
               >Marisa Wangsai</span
             >
-            <span class="text-xs text-[#505050] font-light tracking-wide mt-0.5"
+            <span
+              class="text-xs text-[#505050] font-light tracking-wide mt-0.5"
+              data-i18n="nav.title"
               >Portfolio</span
             >
           </div>
@@ -51,7 +54,7 @@
               onclick="switchTab('home')"
               class="nav-btn hover-lift text-[#505050] hover:text-gray-900 focus:outline-none"
             >
-              <span id="label-home">Home</span>
+              <span id="label-home" data-i18n="nav.home">Home</span>
             </button>
 
             <!-- About Me Link -->
@@ -60,7 +63,7 @@
               onclick="switchTab('about')"
               class="nav-btn hover-lift text-gray-700 hover:text-gray-900 focus:outline-none"
             >
-              <span id="label-about">About Me</span>
+              <span id="label-about" data-i18n="nav.about">About Me</span>
             </button>
 
             <!-- Project Dropdown Group -->
@@ -70,7 +73,7 @@
                 onclick="switchTab('project')"
                 class="nav-btn hover-lift flex items-center space-x-1.5 text-gray-700 hover:text-gray-900 focus:outline-none"
               >
-                <span id="label-project">Project</span>
+                <span id="label-project" data-i18n="nav.project">Project</span>
                 <i
                   id="project-arrow"
                   class="fa-solid fa-chevron-down text-xs"
@@ -125,16 +128,17 @@
               class="action-btn px-5 py-2 text-sm font-medium rounded-full flex items-center space-x-2 shadow-sm focus:outline-none"
             >
               <i class="fa-regular fa-paper-plane text-xs"></i>
-              <span>Contact me</span>
+              <span data-i18n="nav.contact">Contact me</span>
             </a>
 
+            <!-- ปุ่มสลับภาษาเชื่อมต่อกับฟังก์ชัน toggleLanguage เรียบร้อย -->
             <button
-              onclick="toggleLanguage(this)"
+              onclick="toggleLanguage()"
               class="action-btn w-16 h-10 text-xs font-medium rounded-full flex items-center justify-center shadow-sm focus:outline-none"
               title="Switch Language"
             >
               <i class="fa-solid fa-arrows-rotate mr-1 text-[10px]"></i>
-              <span id="lang-text">TH</span>
+              <span id="lang-text">EN</span>
             </button>
           </div>
         </div>

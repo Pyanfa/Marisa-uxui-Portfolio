@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
 
+    <!-- 1. โหลดไฟล์แปลภาษา i18n.js -->
+    <script src="i18n.js"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -60,13 +63,20 @@
         src: local('Iosevka Charon'), local('Iosevka');
       }
 
-      body, button, a, span, h1, div {
-        font-family: 'Iosevka Charon', 'Iosevka', 'JetBrains Mono', 'Fira Code', 'Prompt', monospace;
+      body,
+      button,
+      a,
+      span,
+      h1,
+      div {
+        font-family: 'Iosevka Charon', 'Iosevka', 'JetBrains Mono', 'Fira Code',
+          'Prompt', monospace;
       }
 
       /* Custom hover lift animations */
       .hover-lift {
-        transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+          background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
       }
       .hover-lift:hover {
         transform: translateY(-3px);
@@ -103,9 +113,10 @@
         padding: 0.5rem 0.25rem;
       }
 
-      /* Sub-nav toggle animation */
+      /* Subnav container animation */
       .subnav-container {
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.3s ease;
         opacity: 0;
         transform: translateY(-25px);
         visibility: hidden;
@@ -192,7 +203,6 @@
           card.addEventListener('mouseenter', () => {
             cards.forEach((c) => {
               if (c === card) {
-                // ขยายการ์ดใบที่ชี้ออกด้านข้างในแถวเดิม
                 c.style.flexGrow = '1.5';
                 c.style.opacity = '1';
 
@@ -203,7 +213,6 @@
                   content.style.transform = 'translateY(0)';
                 }
               } else {
-                // การ์ดใบอื่นหดลงในแถวเดิม
                 c.style.flexGrow = '0.7';
                 c.style.opacity = '0.6';
               }
@@ -212,7 +221,6 @@
 
           card.addEventListener('mouseleave', () => {
             cards.forEach((c) => {
-              // รีเซ็ตการ์ดทุกใบกลับมาเท่ากัน
               c.style.flexGrow = '1';
               c.style.opacity = '1';
 
@@ -270,13 +278,6 @@
         updateActiveLine(tabId);
       }
 
-      function toggleLanguage(btn) {
-        const langSpan = document.getElementById('lang-text');
-        if (langSpan) {
-          langSpan.innerText = langSpan.innerText === 'TH' ? 'EN' : 'TH';
-        }
-      }
-
       // โหลดส่วนประกอบทั้งหมดเมื่อหน้าเว็บเริ่มทำงาน
       window.addEventListener('DOMContentLoaded', async () => {
         await loadComponent('navbar-container', 'navbar.html');
@@ -285,11 +286,13 @@
         await loadComponent('view-project', 'project.html');
         await loadComponent('footer-container', 'footer.html');
 
-        // เรียกผูก Event ของ Accordion หลังจากดึง home.html เข้ามาเรียบร้อยแล้ว
         initProjectAccordion();
-
-        // เริ่มต้นเปิดหน้า Home
         switchTab('home');
+
+        // 2. สั่งอัปเดตภาษาทั้งหมดหลังจาก HTML ย่อยถูกโหลดเข้ามาเรียบร้อยแล้ว
+        if (typeof setLanguage === 'function') {
+          setLanguage(currentLang);
+        }
       });
 
       window.addEventListener('resize', () => {
