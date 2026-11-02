@@ -1,0 +1,375 @@
+<section id="content-home" class="tab-content w-full flex flex-col">
+  <!-- Video Hero Section -->
+  <div
+    class="w-full h-screen min-h-[700px] bg-black relative flex items-center justify-center"
+  >
+    <video
+      src="Asset/Showreel/ShowreelPort.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+      class="w-full h-full object-cover"
+    ></video>
+  </div>
+
+  <!-- Scrollable Content Section Below Video -->
+  <div
+    class="w-full bg-white py-24 px-6 flex flex-col items-center justify-center shadow-inner"
+  >
+    <div class="max-w-5xl text-center space-y-4">
+      <h2
+        class="text-5xl lg:text-48px text-gray-600 tracking-tight leading-[1.4]"
+      >
+        What if UX could feel <br />like play, not just use?
+      </h2>
+      <p class="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
+        I solve problems through game design thinking, turning challenges into
+        engaging experiences that spark curiosity and interaction.
+      </p>
+
+      <!-- Skill Badges -->
+      <div class="pt-8 flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-desktop text-xs"></i> <span>UX/UI Design</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-code text-xs"></i> <span>Web Design</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-layer-group text-xs"></i>
+          <span>Prototyping</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-atom text-xs"></i> <span>Design System</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-paint-brush text-xs"></i>
+          <span>Visual Design</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-wand-magic-sparkles text-xs"></i>
+          <span>Interaction</span>
+        </span>
+        <span
+          class="px-4 py-2 bg-sky-50 text-sky-600 rounded-full text-xs font-medium flex items-center space-x-2 border border-sky-100"
+        >
+          <i class="fa-solid fa-gamepad text-xs"></i> <span>Level Design</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- RECENT PROJECTS SECTION -->
+    <div class="w-full max-w-5xl mx-auto mt-24 flex flex-col items-center">
+      <!-- Title -->
+      <h2
+        class="w-full text-3xl md:text-4xl text-gray-700 font-normal tracking-wide mb-10 text-center"
+      >
+        Recent Projects
+      </h2>
+
+      <!-- Interactive Flex Accordion Container -->
+      <div
+        id="project-accordion"
+        class="w-full flex flex-row gap-4 items-stretch h-[380px] overflow-hidden"
+      >
+        <!-- CARD 1: Coral College -->
+        <div
+          class="project-card relative rounded-2xl overflow-hidden cursor-pointer shadow-md flex-1 transition-[flex-grow,opacity] duration-500 ease-out flex flex-col justify-end bg-slate-900"
+        >
+          <!-- Background Image -->
+          <img
+            src="Asset/Picture/Coral College.png"
+            alt="Coral College"
+            class="card-bg-img absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out pointer-events-none"
+          />
+
+          <!-- Blue Transparent Overlay (80% Opacity) -->
+          <div
+            class="card-overlay absolute inset-0 bg-[#0c1a30]/80 opacity-0 transition-opacity duration-500 pointer-events-none"
+          ></div>
+
+          <!-- Content -->
+          <div
+            class="card-content relative z-10 p-6 md:p-8 opacity-0 translate-y-4 transition-all duration-500 flex flex-col justify-between h-full text-white pointer-events-none"
+          >
+            <div>
+              <h3
+                class="text-2xl md:text-3xl font-semibold tracking-wide mb-4 whitespace-nowrap"
+              >
+                Coral College
+              </h3>
+
+              <div class="flex flex-col gap-2 mb-4 w-fit">
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  One Experience, Many Users
+                </span>
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  Learn More, In Less Time
+                </span>
+              </div>
+
+              <p
+                class="text-xs text-gray-200 font-light leading-relaxed max-w-sm line-clamp-4"
+              >
+                One experience designed for different ages, languages, and
+                cultures, helping users learn something new in just a few
+                minutes.
+              </p>
+            </div>
+
+            <!-- Action Link (ย้ายไปอยู่ตรงกลาง) -->
+            <div
+              class="mt-4 flex items-center justify-center space-x-2 text-xs font-light text-gray-200 self-center"
+            >
+              <img src="Asset/Icon_button/Click.svg" alt="Click" class="w-4 h-4 object-contain" />
+              <span>Click To Read More</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Let's Fill -->
+        <div
+          class="project-card relative rounded-2xl overflow-hidden cursor-pointer shadow-md flex-1 transition-[flex-grow,opacity] duration-500 ease-out flex flex-col justify-end bg-slate-900"
+        >
+          <!-- Background Image -->
+          <img
+            src="Asset/Picture/lets Fill.png"
+            alt="Let's Fill"
+            class="card-bg-img absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out pointer-events-none"
+          />
+
+          <!-- Blue Transparent Overlay (80% Opacity) -->
+          <div
+            class="card-overlay absolute inset-0 bg-[#0c1a30]/80 opacity-0 transition-opacity duration-500 pointer-events-none"
+          ></div>
+
+          <!-- Content -->
+          <div
+            class="card-content relative z-10 p-6 md:p-8 opacity-0 translate-y-4 transition-all duration-500 flex flex-col justify-between h-full text-white pointer-events-none"
+          >
+            <div>
+              <h3
+                class="text-2xl md:text-3xl font-semibold tracking-wide mb-4 whitespace-nowrap"
+              >
+                Let's Fill
+              </h3>
+
+              <div class="flex flex-col gap-2 mb-4 w-fit">
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  Hand On Practice
+                </span>
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  Feedback Driven Learning
+                </span>
+              </div>
+
+              <p
+                class="text-xs text-gray-200 font-light leading-relaxed max-w-sm line-clamp-4"
+              >
+                Design a hands-on dental simulation with real-time feedback and
+                hints, enabling students to master cavity restoration
+                independently through iterative testing and UI refinement.
+              </p>
+            </div>
+
+            <!-- Action Link (ย้ายไปอยู่ตรงกลาง) -->
+            <div
+              class="mt-4 flex items-center justify-center space-x-2 text-xs font-light text-gray-200 self-center"
+            >
+              <img src="Asset/Icon_button/Click.svg" alt="Click" class="w-4 h-4 object-contain" />
+              <span>Click To Read More</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Whisper of Anima -->
+        <div
+          class="project-card relative rounded-2xl overflow-hidden cursor-pointer shadow-md flex-1 transition-[flex-grow,opacity] duration-500 ease-out flex flex-col justify-end bg-slate-900"
+        >
+          <!-- Background Image -->
+          <img
+            src="Asset/Picture/Whisper of Anima.png"
+            alt="Whisper of Anima"
+            class="card-bg-img absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out pointer-events-none"
+          />
+
+          <!-- Blue Transparent Overlay (80% Opacity) -->
+          <div
+            class="card-overlay absolute inset-0 bg-[#0c1a30]/80 opacity-0 transition-opacity duration-500 pointer-events-none"
+          ></div>
+
+          <!-- Content -->
+          <div
+            class="card-content relative z-10 p-6 md:p-8 opacity-0 translate-y-4 transition-all duration-500 flex flex-col justify-between h-full text-white pointer-events-none"
+          >
+            <div>
+              <h3
+                class="text-2xl md:text-3xl font-semibold tracking-wide mb-4 whitespace-nowrap"
+              >
+                Whisper of Anima
+              </h3>
+
+              <div class="flex flex-col gap-2 mb-4 w-fit">
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  Spatial Experience Design
+                </span>
+                <span
+                  class="px-4 py-1.5 border border-white/80 rounded-full text-xs font-light text-center backdrop-blur-sm bg-white/10 whitespace-nowrap"
+                >
+                  Behavioral Design
+                </span>
+              </div>
+
+              <p
+                class="text-xs text-gray-200 font-light leading-relaxed max-w-sm line-clamp-4"
+              >
+                Design the player experience using spatial layouts and scene
+                elements to encourage exploration, decision-making, scaling
+                difficulty, and endless replayability.
+              </p>
+            </div>
+
+            <div
+              class="mt-4 flex items-center justify-center space-x-2 text-xs font-light text-gray-200 self-center"
+            >
+              <img src="Asset/Icon_button/Click.svg" alt="Click" class="w-4 h-4 object-contain" />
+              <span>Click To Read More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE CARD COMPONENT -->
+    <div class="w-full max-w-5xl mt-28 mb-4">
+      <div
+        class="bg-[#d9f0ff] rounded-[36px] p-8 md:p-12 shadow-lg flex flex-col md:flex-row gap-8 items-stretch border border-sky-100 text-left"
+      >
+        <div class="flex-1 flex flex-col justify-between space-y-6">
+          <div>
+            <span
+              class="inline-block px-6 py-1 border-[2px] border-gray-500 rounded-full text-sm text-gray-500 font-medium bg-transparent"
+            >
+              Profile
+            </span>
+          </div>
+
+          <div>
+            <h1
+              class="text-3xl md:text-4xl text-gray-500 font-normal leading-snug"
+            >
+              Hello, I am
+            </h1>
+            <h2
+              class="text-3xl md:text-5xl font-semibold text-gray-500 tracking-wide mt-1"
+            >
+              MARISA WANGSAI
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-5 gap-4">
+            <div
+              class="sm:col-span-3 bg-[#eef7ff] p-4 rounded-2xl border border-sky-100/50 flex flex-col justify-center"
+            >
+              <div
+                class="flex items-center space-x-2 text-gray-500 font-semibold text-sm mb-1"
+              >
+                <i class="fa-solid fa-graduation-cap text-base"></i>
+                <span>Graduate</span>
+              </div>
+              <p class="text-[12px] text-gray-600 leading-tight">
+                Bachelor of Science (B.Sc.)<br />
+                College of Arts, Media and Technology,<br />
+                Chiang Mai University
+              </p>
+            </div>
+
+            <div
+              class="sm:col-span-2 bg-[#eef7ff] p-3 rounded-2xl border border-sky-100/50 grid grid-cols-3 gap-2 place-items-center"
+            >
+              <div
+                class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <img src="Asset/Icon/Figma.svg" alt="Figma" class="w-4 h-4 object-contain"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-[#470137] text-pink-400 rounded-lg flex items-center justify-center shadow-sm font-bold text-xs"
+              >
+                Xd
+              </div>
+              <div
+                class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <img src="Asset/Icon/Framer.svg" alt="Framer" class="w-4 h-4 object-contain"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <img src="Asset/Icon/Notion.png" alt="Notion" class="w-4 h-4 object-contain"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <i class="fa-brands fa-github text-black text-lg"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <i class="fa-brands fa-gitlab text-orange-500 text-lg"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button
+              onclick="switchTab('about')"
+              class="action-btn px-6 py-2.5 text-sm font-medium rounded-full flex items-center space-x-2 shadow-sm focus:outline-none"
+            >
+              <span>Get to know me better</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-full md:w-[380px] lg:w-[420px] flex-shrink-0">
+          <div
+            class="w-full h-full min-h-[320px] md:min-h-full rounded-2xl overflow-hidden bg-gray-600 shadow-inner flex items-center justify-center text-white"
+          >
+            <img
+              src="Asset/Picture/Profile.png"
+              alt="Marisa Wangsai Profile"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span class="hidden text-gray-300 font-mono text-sm"
+              >Profile.png</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
