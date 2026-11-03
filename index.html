@@ -179,7 +179,7 @@
 
       // ตัวแปรสำหรับจำโปรเจกต์ล่าสุด (ดึงค่าจาก localStorage หรือใช้ Coral College.html เป็นค่าเริ่มต้น)
       let currentProjectFile =
-        localStorage.getItem('lastProjectFile') || 'Coral College.html';
+        localStorage.getItem('lastProjectFile') || 'Project/Coral College.html';
 
       // ฟังก์ชันสำหรับโหลดไฟล์ HTML ย่อยเข้ามาแปะ
       async function loadComponent(id, file) {
@@ -200,6 +200,7 @@
         localStorage.setItem('lastProjectFile', projectFile);
         await loadComponent('view-project', projectFile);
         switchTab('project');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
       // ฟังก์ชันผูก Animation ให้กับ Project Accordion บนหน้า Home
