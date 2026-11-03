@@ -333,18 +333,18 @@
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function () {
         // ใช้ Event Delegation เพื่อดักจับการคลิกปุ่ม แม้จะโหลดไฟล์แบบแยกส่วน
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
           const btn = event.target.closest('#toggleFlowBtn');
           if (!btn) return;
-    
+
           const container = document.getElementById('detailedFlowContainer');
           const text = document.getElementById('toggleText');
           const icon = document.getElementById('toggleIcon');
-    
+
           if (!container || !text || !icon) return;
-    
+
           if (container.classList.contains('hidden')) {
             // แสดงรายละเอียด (Open State)
             container.classList.remove('hidden');
@@ -352,7 +352,7 @@
               container.classList.remove('opacity-0');
               container.classList.add('opacity-100');
             }, 10);
-            
+
             text.textContent = 'Hide Detailed Flow';
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
@@ -360,11 +360,11 @@
             // ซ่อนรายละเอียด (Close State)
             container.classList.remove('opacity-100');
             container.classList.add('opacity-0');
-            
+
             setTimeout(() => {
               container.classList.add('hidden');
             }, 300);
-    
+
             text.textContent = 'View Detailed Flow';
             icon.classList.remove('fa-chevron-up');
             icon.classList.add('fa-chevron-down');
@@ -372,5 +372,31 @@
         });
       });
     </script>
+
+    <!-- Script สำหรับควบคุมการสไลด์รูปภาพอัตโนมัติทุกๆ 3 วินาที -->
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide-item');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('opacity-100', i === index);
+      slide.classList.toggle('opacity-0', i !== index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('bg-slate-700', i === index);
+      dot.classList.toggle('bg-slate-300', i !== index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // ตั้งเวลาเปลี่ยนภาพทุกๆ 3 วินาที (3000 มิลลิวินาที)
+  setInterval(nextSlide, 3000);
+</script>
   </body>
 </html>
