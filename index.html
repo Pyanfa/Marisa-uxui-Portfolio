@@ -176,9 +176,10 @@
 
     <script>
       let currentTab = 'home';
-      
-      // 1. เพิ่มตัวแปรสำหรับจำโปรเจกต์ล่าสุด (ดึงค่าจาก localStorage หรือถ้าไม่มีให้ใช้ coral-college.html เป็นค่าเริ่มต้น)
-      let currentProjectFile = localStorage.getItem('lastProjectFile') || 'coral-college.html';
+
+      // ตัวแปรสำหรับจำโปรเจกต์ล่าสุด (ดึงค่าจาก localStorage หรือใช้ Coral College.html เป็นค่าเริ่มต้น)
+      let currentProjectFile =
+        localStorage.getItem('lastProjectFile') || 'Coral College.html';
 
       // ฟังก์ชันสำหรับโหลดไฟล์ HTML ย่อยเข้ามาแปะ
       async function loadComponent(id, file) {
@@ -193,12 +194,12 @@
         }
       }
 
-      // 2. สร้างฟังก์ชันใหม่สำหรับจัดการโหลดไฟล์โปรเจกต์โดยเฉพาะ + บันทึกชื่อไฟล์ลงหน่วยความจำเบราว์เซอร์
+      // ฟังก์ชันสำหรับจัดการโหลดไฟล์โปรเจกต์ + บันทึกชื่อไฟล์ลง localStorage
       async function loadProject(projectFile) {
         currentProjectFile = projectFile;
-        localStorage.setItem('lastProjectFile', projectFile); // บันทึกชื่อไฟล์เก็บไว้
-        await loadComponent('view-project', projectFile);    // ดึงไฟล์ HTML ของโปรเจกต์มาแสดง
-        switchTab('project');                                // สลับหน้าจอมาที่แท็บโปรเจกต์
+        localStorage.setItem('lastProjectFile', projectFile);
+        await loadComponent('view-project', projectFile);
+        switchTab('project');
       }
 
       // ฟังก์ชันผูก Animation ให้กับ Project Accordion บนหน้า Home
@@ -250,6 +251,7 @@
         });
       }
 
+      // ปรับปรุงฟังก์ชันคำนวณตำแหน่งเส้นสีฟ้าให้แม่นยำ ไม่หักลบค่าเกินจริง
       function updateActiveLine(tabId) {
         const activeBtn = document.getElementById(`nav-${tabId}`);
         const labelElem = document.getElementById(`label-${tabId}`);
@@ -261,7 +263,7 @@
           const labelRect = labelElem.getBoundingClientRect();
 
           const leftOffset = labelRect.left - containerRect.left - 40;
-          const textWidth = labelRect.width + 2;
+          const textWidth = labelRect.width + 4;
 
           line.style.left = `${leftOffset}px`;
           line.style.width = `${textWidth}px`;
@@ -271,18 +273,28 @@
       async function switchTab(tabId) {
         currentTab = tabId;
 
-        document
-          .querySelectorAll('.tab-content')
-          .forEach((el) => el.classList.add('hidden'));
-        const activeContent = document.getElementById(`content-${tabId}`);
-        if (activeContent) activeContent.classList.remove('hidden');
+        // จัดการซ่อน/แสดง View หลัก (home, about, project)
+        const views = {
+          home: document.getElementById('view-home'),
+          about: document.getElementById('view-about'),
+          project: document.getElementById('view-project'),
+        };
+
+        Object.keys(views).forEach((key) => {
+          if (views[key]) {
+            if (key === tabId) {
+              views[key].classList.remove('hidden');
+            } else {
+              views[key].classList.add('hidden');
+            }
+          }
+        });
 
         const subNav = document.getElementById('sub-nav');
         if (subNav) {
           if (tabId === 'project') {
             subNav.classList.add('open');
-            // 3. เมื่อกดสลับมาที่หัวข้อ Project ถ้ายังไม่มีเนื้อหา ให้โหลดไฟล์โปรเจกต์ล่าสุดที่ค้างไว้ขึ้นมาแสดงทันที
-            if (!document.getElementById('content-project').hasChildNodes()) {
+            if (!document.getElementById('view-project').hasChildNodes()) {
               await loadComponent('view-project', currentProjectFile);
             }
           } else {
@@ -298,16 +310,17 @@
         await loadComponent('navbar-container', 'navbar.html');
         await loadComponent('view-home', 'home.html');
         await loadComponent('view-about', 'about.html');
-        
-        // 4. ตอนเปิดเว็บครั้งแรก ให้โหลดโปรเจกต์ล่าสุดรอไว้ล่วงหน้าเลย
         await loadComponent('view-project', currentProjectFile);
-        
         await loadComponent('footer-container', 'footer.html');
 
         initProjectAccordion();
-        switchTab('home');
 
-        // 2. สั่งอัปเดตภาษาทั้งหมดหลังจาก HTML ย่อยถูกโหลดเข้ามาเรียบร้อยแล้ว
+        // ใช้ setTimeout เล็กน้อยเพื่อให้แน่ใจว่าเบราว์เซอร์เรนเดอร์ขนาด Element เสร็จก่อนคำนวณเส้นสีฟ้าตอนเริ่มต้น
+        setTimeout(() => {
+          switchTab('home');
+        }, 50);
+
+        // สั่งอัปเดตภาษาทั้งหมดหลังจาก HTML ย่อยถูกโหลดเข้ามาเรียบร้อยแล้ว
         if (typeof setLanguage === 'function') {
           setLanguage(currentLang);
         }
