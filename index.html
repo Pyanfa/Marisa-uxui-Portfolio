@@ -188,6 +188,11 @@
           if (response.ok) {
             const html = await response.text();
             document.getElementById(id).innerHTML = html;
+            
+            // ถ้าเป็นหน้าโปรเจกต์ ให้สั่งเริ่มทำงาน Slider ทันทีที่โหลดเสร็จ
+            if (id === 'view-project') {
+              setTimeout(initUsabilitySlider, 100);
+            }
           }
         } catch (error) {
           console.error(`Error loading ${file}:`, error);
@@ -285,6 +290,10 @@
           if (views[key]) {
             if (key === tabId) {
               views[key].classList.remove('hidden');
+              // ถ้าเปิดแท็บโปรเจกต์ ให้เรียกเช็คสไลด์ด้วย
+              if (tabId === 'project') {
+                setTimeout(initUsabilitySlider, 100);
+              }
             } else {
               views[key].classList.add('hidden');
             }
@@ -332,9 +341,9 @@
       });
     </script>
 
+    <!-- Script สำหรับควบคุม User Flow Toggle (เปิด-ปิด) -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        // ใช้ Event Delegation เพื่อดักจับการคลิกปุ่ม แม้จะโหลดไฟล์แบบแยกส่วน
         document.addEventListener('click', function (event) {
           const btn = event.target.closest('#toggleFlowBtn');
           if (!btn) return;
@@ -346,7 +355,6 @@
           if (!container || !text || !icon) return;
 
           if (container.classList.contains('hidden')) {
-            // แสดงรายละเอียด (Open State)
             container.classList.remove('hidden');
             setTimeout(() => {
               container.classList.remove('opacity-0');
@@ -357,7 +365,6 @@
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
           } else {
-            // ซ่อนรายละเอียด (Close State)
             container.classList.remove('opacity-100');
             container.classList.add('opacity-0');
 
@@ -373,16 +380,16 @@
       });
     </script>
 
+    <!-- Script สำหรับควบคุมสไลด์รูปภาพ Usability Testing ทุกๆ 3 วินาที -->
     <script>
-      // ฟังก์ชันควบคุมสไลด์รูปภาพ Usability Testing (ทำงานวนลูปทุก 3 วินาที)
       function initUsabilitySlider() {
         const slides = document.querySelectorAll('.slide-item');
         const dots = document.querySelectorAll('.dot');
         
-        if (slides.length === 0) return; // ถ้ายังไม่เจอหน้านี้ ให้ข้ามไปก่อน
-    
+        if (slides.length === 0) return;
+
         let currentSlide = 0;
-    
+
         function showSlide(index) {
           slides.forEach((slide, i) => {
             slide.classList.toggle('opacity-100', i === index);
@@ -393,21 +400,20 @@
             dot.classList.toggle('bg-slate-300', i !== index);
           });
         }
-    
+
         function nextSlide() {
           currentSlide = (currentSlide + 1) % slides.length;
           showSlide(currentSlide);
         }
-    
+
+        // ล้าง setInterval ตัวเก่าเพื่อป้องกันการทำงานซ้อนทับกัน
+        if (window.usabilityInterval) {
+          clearInterval(window.usabilityInterval);
+        }
+
         // ตั้งเวลาสลับภาพทุกๆ 3 วินาที
-        setInterval(nextSlide, 3000);
+        window.usabilityInterval = setInterval(nextSlide, 3000);
       }
-    
-      // เรียกใช้งานหลังจากโหลดหน้าโปรเจกต์เสร็จแล้ว (ใส่ไว้ในฟังก์ชันโหลดหรือรันตอนเปิดหน้า)
-      // หรือใช้ DOMContentLoaded ตรวจสอบ
-      window.addEventListener('DOMContentLoaded', () => {
-        setTimeout(initUsabilitySlider, 500);
-      });
     </script>
   </body>
 </html>
