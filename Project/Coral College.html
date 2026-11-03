@@ -487,50 +487,15 @@
       </div>
 
       <!-- Toggle Button Footer Bar -->
+     <!-- Toggle Button Footer Bar -->
       <button 
         id="toggleFlowBtn"
-        onclick="toggleDetailedFlow()"
         class="w-full bg-white hover:bg-slate-50 py-4 px-6 text-center text-xs md:text-sm font-semibold text-slate-700 font-mono transition-colors border-t border-white/60 flex items-center justify-center space-x-2 cursor-pointer group"
       >
         <span id="toggleText">View Detailed Flow</span>
         <i id="toggleIcon" class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform duration-300 group-hover:translate-y-0.5"></i>
       </button>
-
     </div>
 
   </div>
 </section>
-
-<!-- Script สำหรับควบคุมการ เปิด-ปิด (Toggle Accordion) -->
-<script>
-  function toggleDetailedFlow() {
-    const container = document.getElementById('detailedFlowContainer');
-    const text = document.getElementById('toggleText');
-    const icon = document.getElementById('toggleIcon');
-
-    if (container.classList.contains('hidden')) {
-      // แสดงรายละเอียด (Open State)
-      container.classList.remove('hidden');
-      setTimeout(() => {
-        container.classList.remove('opacity-0');
-        container.classList.add('opacity-100');
-      }, 10);
-      
-      text.textContent = 'Hide Detailed Flow';
-      icon.classList.remove('fa-chevron-down');
-      icon.classList.add('fa-chevron-up');
-    } else {
-      // ซ่อนรายละเอียด (Close State)
-      container.classList.remove('opacity-100');
-      container.classList.add('opacity-0');
-      
-      setTimeout(() => {
-        container.classList.add('hidden');
-      }, 300);
-
-      text.textContent = 'View Detailed Flow';
-      icon.classList.remove('fa-chevron-up');
-      icon.classList.add('fa-chevron-down');
-    }
-  }
-</script>
