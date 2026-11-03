@@ -176,6 +176,9 @@
 
     <script>
       let currentTab = 'home';
+      
+      // 1. เพิ่มตัวแปรสำหรับจำโปรเจกต์ล่าสุด (ดึงค่าจาก localStorage หรือถ้าไม่มีให้ใช้ coral-college.html เป็นค่าเริ่มต้น)
+      let currentProjectFile = localStorage.getItem('lastProjectFile') || 'coral-college.html';
 
       // ฟังก์ชันสำหรับโหลดไฟล์ HTML ย่อยเข้ามาแปะ
       async function loadComponent(id, file) {
@@ -188,6 +191,14 @@
         } catch (error) {
           console.error(`Error loading ${file}:`, error);
         }
+      }
+
+      // 2. สร้างฟังก์ชันใหม่สำหรับจัดการโหลดไฟล์โปรเจกต์โดยเฉพาะ + บันทึกชื่อไฟล์ลงหน่วยความจำเบราว์เซอร์
+      async function loadProject(projectFile) {
+        currentProjectFile = projectFile;
+        localStorage.setItem('lastProjectFile', projectFile); // บันทึกชื่อไฟล์เก็บไว้
+        await loadComponent('view-project', projectFile);    // ดึงไฟล์ HTML ของโปรเจกต์มาแสดง
+        switchTab('project');                                // สลับหน้าจอมาที่แท็บโปรเจกต์
       }
 
       // ฟังก์ชันผูก Animation ให้กับ Project Accordion บนหน้า Home
@@ -257,7 +268,7 @@
         }
       }
 
-      function switchTab(tabId) {
+      async function switchTab(tabId) {
         currentTab = tabId;
 
         document
@@ -270,6 +281,10 @@
         if (subNav) {
           if (tabId === 'project') {
             subNav.classList.add('open');
+            // 3. เมื่อกดสลับมาที่หัวข้อ Project ถ้ายังไม่มีเนื้อหา ให้โหลดไฟล์โปรเจกต์ล่าสุดที่ค้างไว้ขึ้นมาแสดงทันที
+            if (!document.getElementById('content-project').hasChildNodes()) {
+              await loadComponent('view-project', currentProjectFile);
+            }
           } else {
             subNav.classList.remove('open');
           }
@@ -283,7 +298,10 @@
         await loadComponent('navbar-container', 'navbar.html');
         await loadComponent('view-home', 'home.html');
         await loadComponent('view-about', 'about.html');
-        await loadComponent('view-project', 'project.html');
+        
+        // 4. ตอนเปิดเว็บครั้งแรก ให้โหลดโปรเจกต์ล่าสุดรอไว้ล่วงหน้าเลย
+        await loadComponent('view-project', currentProjectFile);
+        
         await loadComponent('footer-container', 'footer.html');
 
         initProjectAccordion();
