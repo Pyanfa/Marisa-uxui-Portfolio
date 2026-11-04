@@ -188,7 +188,7 @@
           if (response.ok) {
             const html = await response.text();
             document.getElementById(id).innerHTML = html;
-            
+
             // ถ้าเป็นหน้าโปรเจกต์ ให้สั่งเริ่มทำงาน Slider ทันทีที่โหลดเสร็จ
             if (id === 'view-project') {
               setTimeout(initUsabilitySlider, 100);
@@ -348,28 +348,42 @@
           const btn = event.target.closest('#toggleFlowBtn');
           if (!btn) return;
 
-          const container = document.getElementById('detailedFlowContainer');
+          const overviewContainer = document.getElementById(
+            'overviewDiagramContainer'
+          );
+          const detailedContainer = document.getElementById(
+            'detailedFlowContainer'
+          );
           const text = document.getElementById('toggleText');
           const icon = document.getElementById('toggleIcon');
 
-          if (!container || !text || !icon) return;
+          if (!overviewContainer || !detailedContainer || !text || !icon)
+            return;
 
-          if (container.classList.contains('hidden')) {
-            container.classList.remove('hidden');
+          // เช็คว่าตอนนี้ภาพรายละเอียดซ่อนอยู่หรือไม่ (ถ้าซ่อนอยู่ = กำลังจะเปิด)
+          if (detailedContainer.classList.contains('hidden')) {
+            // 1. ซ่อนภาพย่อด้านบน
+            overviewContainer.classList.add('hidden');
+
+            // 2. แสดงภาพรายละเอียดเต็ม
+            detailedContainer.classList.remove('hidden');
             setTimeout(() => {
-              container.classList.remove('opacity-0');
-              container.classList.add('opacity-100');
+              detailedContainer.classList.remove('opacity-0');
+              detailedContainer.classList.add('opacity-100');
             }, 10);
 
             text.textContent = 'Hide Detailed Flow';
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
           } else {
-            container.classList.remove('opacity-100');
-            container.classList.add('opacity-0');
+            // 1. ซ่อนภาพรายละเอียดเต็ม
+            detailedContainer.classList.remove('opacity-100');
+            detailedContainer.classList.add('opacity-0');
 
             setTimeout(() => {
-              container.classList.add('hidden');
+              detailedContainer.classList.add('hidden');
+              // 2. แสดงภาพย่อด้านบนกลับมา
+              overviewContainer.classList.remove('hidden');
             }, 300);
 
             text.textContent = 'View Detailed Flow';
@@ -385,7 +399,7 @@
       function initUsabilitySlider() {
         const slides = document.querySelectorAll('.slide-item');
         const dots = document.querySelectorAll('.dot');
-        
+
         if (slides.length === 0) return;
 
         let currentSlide = 0;
