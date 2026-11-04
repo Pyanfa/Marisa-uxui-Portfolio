@@ -146,50 +146,17 @@
     </div>
 
     <!-- 2. SECONDARY SUB-NAVBAR -->
-    <div
-      id="sub-nav"
-      class="subnav-container relative z-0 pointer-events-auto -mt-4"
-    >
-      <div
-        class="relative z-10 bg-[#bfdaf7]/95 backdrop-blur-md pt-6 pb-2.5 rounded-b-[24px] max-w-full px-6 flex items-center justify-center space-x-8 text-xs font-medium text-gray-700 shadow-md border-t border-white/2"
-      >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >Overview</a
-        >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >User Flow</a
-        >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >Test</a
-        >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >Design Decision</a
-        >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >Final Design</a
-        >
-        <a
-          href="#"
-          onclick="switchTab('project'); event.preventDefault();"
-          class="hover-lift hover:text-brand-hoverblue transition-colors"
-          >Impact</a
-        >
-      </div>
-    </div>
+<div id="sub-nav" class="subnav-container relative z-0 pointer-events-auto -mt-4">
+  <div class="relative z-10 bg-[#bfdaf7]/95 backdrop-blur-md pt-6 pb-2.5 rounded-b-[24px] max-w-full px-6 flex items-center justify-center space-x-8 text-xs font-medium text-gray-700 shadow-md border-t border-white/2">
+    
+    <a href="#" onclick="scrollToSection('overview'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">Overview</a>
+    <a href="#" onclick="scrollToSection('user-flow'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">User Flow</a>
+    <a href="#" onclick="scrollToSection('test'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">Test</a>
+    <a href="#" onclick="scrollToSection('design-decision'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">Design Decision</a>
+    <a href="#" onclick="scrollToSection('final-design'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">Final Design</a>
+    <a href="#" onclick="scrollToSection('impact'); event.preventDefault();" class="hover-lift hover:text-brand-hoverblue transition-colors">Impact</a>
+
+  </div>
+</div>
   </div>
 </header>

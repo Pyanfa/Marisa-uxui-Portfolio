@@ -23,6 +23,26 @@
     <script src="i18n.js"></script>
 
     <script>
+    function scrollToSection(sectionId) {
+      // 1. ตรวจสอบว่าอยู่หน้า Project หรือยัง ถ้ายังให้เรียกฟังก์ชันเปิดหน้าโปรเจกต์ก่อน
+      if (typeof switchTab === 'function') {
+        switchTab('project');
+      }
+    
+      // 2. ใช้ setTimeout เล็กน้อยเพื่อให้แน่ใจว่า DOM ของหน้าโปรเจกต์ถูกโหลด/แสดงผลเรียบร้อยแล้ว
+      setTimeout(() => {
+        const targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        }
+      }, 100);
+    }
+  </script>
+
+    <script>
       tailwind.config = {
         theme: {
           extend: {

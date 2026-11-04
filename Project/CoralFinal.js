@@ -1,7 +1,7 @@
 const finalDesignData = [
   {
     title: 'Main Menu',
-    mainImg: 'Asset/Picture/CoralFinal/Main_Menu.png',
+    mainImg: 'Asset/Picture/CoralFinal/MainMenu.png',
     tags: ['Contrast', 'Primary CTA', 'Simplified Choices'],
     bullets: [
       'Emphasized the Start button using orange against a blue background, with subtle animation to attract attention and guide users to click.',
@@ -10,8 +10,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Select Language',
-    mainImg: 'Asset/Picture/CoralFinal/Language.png',
+    title: 'Sign In',
+    mainImg: 'Asset/Picture/CoralFinal/SignIn.png',
     tags: ['Accessibility', 'Multi-Language', 'Visual Cues'],
     bullets: [
       'Improved form readability using white containers against a blue background to separate input fields and maintain focus.',
@@ -20,7 +20,7 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Select Character',
+    title: 'Character',
     mainImg: 'Asset/Picture/CoralFinal/Character.png',
     tags: ['Personalization', 'Interactive', 'User Engagement'],
     bullets: [
@@ -29,8 +29,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Intro',
-    mainImg: 'Asset/Picture/CoralFinal/Intro.png',
+    title: 'Greeting',
+    mainImg: 'Asset/Picture/CoralFinal/Greeting.png',
     tags: ['Storytelling', 'Short Content', 'Visual First'],
     bullets: [
       'สรุปเนื้อหาบทนำสั้น กระชับ ไม่รบกวนเวลาท่องเที่ยวของผู้ใช้งาน',
@@ -39,8 +39,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Pre-Test',
-    mainImg: 'Asset/Picture/CoralFinal/PreTest.png',
+    title: 'First Result',
+    mainImg: 'Asset/Picture/CoralFinal/FirstResult.png',
     tags: ['Baseline Assessment', 'Fast Interaction', 'Clear UI'],
     bullets: [
       'แบบทดสอบก่อนเรียนสั้นๆ เพื่อประเมินความรู้พื้นฐานของผู้ใช้',
@@ -49,8 +49,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Video Learn',
-    mainImg: 'Asset/Picture/CoralFinal/Video.png',
+    title: 'Mini Game',
+    mainImg: 'Asset/Picture/CoralFinal/MiniGame.png',
     tags: ['Integrated Video', 'One-Stop Stream', 'Engagement'],
     bullets: [
       'รวบรวมเนื้อหาวิดีโอสั้นเข้าด้วยกันเป็นคลิปเดียวต่อเนื่องเพื่อลดระยะเวลาเรียนรู้',
@@ -59,8 +59,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Post-Test Exam',
-    mainImg: 'Asset/Picture/CoralFinal/PostTest.png',
+    title: 'Mini Game Result',
+    mainImg: 'Asset/Picture/CoralFinal/MiniGameResult.png',
     tags: ['Knowledge Check', 'Instant Feedback', 'Gamification'],
     bullets: [
       'ทบทวนความรู้หลังรับชมสื่อด้วยคำถามสั้นๆ ประยุกต์ใช้ในสถานการณ์จริง',
@@ -69,8 +69,8 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Success',
-    mainImg: 'Asset/Picture/CoralFinal/Success.png',
+    title: 'Reward',
+    mainImg: 'Asset/Picture/CoralFinal/Reward.png',
     tags: ['Reward System', 'Satisfaction', 'Completion'],
     bullets: [
       'หน้าจอแสดงความยินดีพร้อมมอบสิทธิประโยชน์/รางวัลเพื่อสร้างความพึงพอใจสูงสุด',
