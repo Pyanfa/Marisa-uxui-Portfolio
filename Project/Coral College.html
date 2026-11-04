@@ -736,7 +736,7 @@
 
 <!-- Key Design Decision Section -->
 <section
-  class="w-full bg-[#D3EFFF] py-16 px-6 md:px-12 font-mono text-slate-700"
+  class="w-full bg-[#dcf0ff] py-16 px-6 md:px-12 font-mono text-slate-700"
 >
   <div class="max-w-6xl mx-auto space-y-10">
     <!-- Section Title -->
@@ -942,6 +942,244 @@
   </div>
 </section>
 
+<!-- Final Design  Section -->
+<section
+  class="w-full bg-[#aedbf8] py-16 px-6 md:px-12 font-mono text-slate-800 overflow-hidden"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <!-- ฝั่งซ้าย: Display ภาพใหญ่ (Mockup Phone) -->
+      <div class="lg:col-span-5 flex justify-center items-center pt-8">
+        <div
+          class="relative w-full max-w-[320px] sm:max-w-[360px] aspect-[9/19] drop-shadow-2xl transition-all duration-300"
+        >
+          <img
+            id="final-design-main-img"
+            src="Asset/Picture/CoralFinal/Main_Menu.png"
+            alt="Final Design Preview"
+            class="w-full h-full object-contain transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      <!-- ฝั่งขวา: รายละเอียด + ตัวเลือกรูปเล็ก + ปุ่ม CTA -->
+      <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+        <!-- Main Title -->
+        <h2
+          class="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-slate-900"
+        >
+          Final Design
+        </h2>
+        <!-- Header & Badges -->
+        <div>
+          <h3
+            id="final-design-subtitle"
+            class="text-lg md:text-xl font-bold text-slate-700 mb-4 flex items-center space-x-2"
+          >
+            <span
+              class="inline-block w-1.5 h-5 bg-[#009be3] rounded-full"
+            ></span>
+            <span id="final-design-title-text">Main Menu</span>
+          </h3>
+
+          <!-- Feature Tags / Pills -->
+          <div id="final-design-tags" class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs"
+              >● Contrast</span
+            >
+            <span
+              class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs"
+              >● Primary CTA</span
+            >
+            <span
+              class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs"
+              >● Simplified Choices</span
+            >
+          </div>
+
+          <!-- Thumbnails List (คลิกเพื่อเปลี่ยนภาพและเนื้อหา) -->
+          <div
+            class="flex items-center space-x-2 sm:space-x-3 overflow-x-auto pb-4 pt-2 snap-x"
+          >
+            <!-- Item 1: Main Menu -->
+            <button
+              onclick="selectFinalDesign(0)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Main_Menu.png"
+                alt="Main Menu"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-slate-700/60 group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 2: Select Language -->
+            <button
+              onclick="selectFinalDesign(1)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Language.png"
+                alt="Select Language"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 3: Select Character -->
+            <button
+              onclick="selectFinalDesign(2)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Character.png"
+                alt="Select Character"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 4: Intro -->
+            <button
+              onclick="selectFinalDesign(3)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Intro.png"
+                alt="Intro"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 5: Pre-Test -->
+            <button
+              onclick="selectFinalDesign(4)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_PreTest.png"
+                alt="Pre-Test"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 6: Video Learn -->
+            <button
+              onclick="selectFinalDesign(5)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Video.png"
+                alt="Video Learn"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 7: Post-Test Exam -->
+            <button
+              onclick="selectFinalDesign(6)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_PostTest.png"
+                alt="Post-Test Exam"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+
+            <!-- Item 8: Success -->
+            <button
+              onclick="selectFinalDesign(7)"
+              class="fd-thumb-btn group shrink-0 relative transition-transform duration-200 ease-out hover:-translate-y-[5px] focus:outline-none"
+            >
+              <img
+                src="Asset/Picture/CoralFinal/Thumb_Success.png"
+                alt="Success"
+                class="w-12 h-24 sm:w-14 sm:h-28 object-cover rounded-xl border-2 border-transparent group-hover:border-[#009be3] shadow-md transition-all"
+              />
+            </button>
+          </div>
+
+          <!-- Indicators / Pagination Dots -->
+          <div
+            id="final-design-dots"
+            class="flex justify-center items-center space-x-1.5 my-4"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-slate-700 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+            <span
+              class="w-2 h-2 rounded-full bg-white/60 transition-all"
+            ></span>
+          </div>
+
+          <!-- Bullet Point Descriptions -->
+          <ul
+            id="final-design-bullets"
+            class="space-y-2 text-xs md:text-sm text-slate-700 font-sans leading-relaxed min-h-[90px] pt-2"
+          >
+            <li class="flex items-start space-x-2">
+              <span class="text-slate-900 mt-1">•</span>
+              <span
+                >Emphasized the Start button using orange against a blue
+                background, with subtle animation to attract attention and guide
+                users to click.</span
+              >
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-slate-900 mt-1">•</span>
+              <span
+                >Established a clear visual hierarchy by arranging the logo,
+                language selection, and Start button in the order of actual
+                use.</span
+              >
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-slate-900 mt-1">•</span>
+              <span
+                >Removed unnecessary options, leaving only language selection
+                and the Start button to simplify decision making.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Bottom Action Button (ดึงคลาส .action-btn มาใช้ได้เลย) -->
+        <div class="flex justify-end pt-4">
+          <a
+            href="https://your-project-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn inline-flex items-center justify-center px-7 py-2.5 rounded-full font-medium text-sm space-x-2 shadow-lg group"
+          >
+            <span>Go to Project</span>
+            <i
+              class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Outcome & Key Learning Section -->
 <section
   class="w-full bg-white py-16 px-6 md:px-12 font-mono text-slate-700 flex justify-center"
@@ -1029,3 +1267,51 @@
     </div>
   </div>
 </section>
+<!-- Project Pagination Footer Section -->
+<footer class="w-full bg-white py-12 px-6 font-mono">
+  <div
+    class="max-w-6xl mx-auto flex flex-col items-center justify-center space-y-4"
+  >
+    <!-- Navigation Control Bar -->
+    <div class="flex items-center space-x-6 text-slate-600">
+      <!-- ปุ่มย้อนกลับ (แสดงหน้าสุดท้าย: Whisper of Anima.html) -->
+      <a
+        href="#"
+        onclick="loadProject('Project/Whisper of Anima.html', 'Whisper of Anima'); event.preventDefault();"
+        class="p-2 rounded-full hover:bg-slate-100 hover:text-slate-900 transition-colors flex items-center justify-center"
+      >
+        <i class="fa-solid fa-chevron-left text-sm"></i>
+      </a>
+
+      <!-- ตัวเลขบอกลำดับหน้าปัจจุบัน -->
+      <span class="text-sm font-semibold tracking-wider text-slate-700">1</span>
+
+      <!-- ปุ่มถัดไป (แสดงหน้าถัดไป: Lets Fill.html) -->
+      <a
+        href="#"
+        onclick="loadProject('Project/Lets Fill.html', 'Let\'s Fill'); event.preventDefault();"
+        class="p-2 rounded-full hover:bg-slate-100 hover:text-slate-900 transition-colors flex items-center justify-center"
+      >
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+      </a>
+    </div>
+
+    <!-- Pagination Indicator Dots (ไข่ปลา 3 จุด) -->
+    <div class="flex items-center space-x-2">
+      <!-- จุดที่ 1 (Active Page) -->
+      <span
+        class="w-2.5 h-2.5 rounded-full bg-[#7caed8] transition-all duration-300"
+      ></span>
+      <!-- จุดที่ 2 -->
+      <a
+        href="Project/Lets Fill.html"
+        class="w-2.5 h-2.5 rounded-full bg-slate-200 hover:bg-slate-400 transition-all duration-300"
+      ></a>
+      <!-- จุดที่ 3 -->
+      <a
+        href="Project/Whisper of Anima.html"
+        class="w-2.5 h-2.5 rounded-full bg-slate-200 hover:bg-slate-400 transition-all duration-300"
+      ></a>
+    </div>
+  </div>
+</footer>
