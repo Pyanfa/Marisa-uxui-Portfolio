@@ -113,7 +113,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
       <!-- Card 1: This Project's Role (lg:col-span-8) -->
       <div
-        class="lg:col-span-8 bg-white border border-[#d2ebfd] rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col justify-center"
+        class="lg:col-span-8 bg-white border-2 border-[#d2ebfd] rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col justify-center"
       >
         <h2
           class="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight mb-8"
@@ -194,7 +194,7 @@
           <div
             class="w-full bg-[#d6edff] border border-[#bce2fe] text-[#2b5278] font-medium py-2.5 px-5 rounded-2xl flex items-center space-x-3 text-sm"
           >
-            <i class="fa-solid fa-web"></i>
+            <i class="fa-solid fa-laptop-code"></i>
             <span>Prototype</span>
           </div>
         </div>
@@ -447,7 +447,10 @@
         </h2>
 
         <!-- Overview Diagram Container (ภาพย่อที่จะถูกซ่อนเมื่อกดดูรายละเอียดเต็ม) -->
-        <div id="overviewDiagramContainer" class="w-full overflow-x-auto py-4 transition-all duration-300">
+        <div
+          id="overviewDiagramContainer"
+          class="w-full overflow-x-auto py-4 transition-all duration-300"
+        >
           <div class="min-w-[700px] flex justify-center items-center">
             <img
               src="Asset/Picture/UserFlow/UndetailUserflowCoral.png"
@@ -473,14 +476,16 @@
       </div>
 
       <!-- Toggle Button Footer Bar (เอา onclick ออกเพื่อให้สคริปต์กลางควบคุม) -->
-      <button 
+      <button
         id="toggleFlowBtn"
         class="w-full bg-white hover:bg-slate-50 py-4 px-6 text-center text-xs md:text-sm font-semibold text-slate-700 font-mono transition-colors border-t border-white/60 flex items-center justify-center space-x-2 cursor-pointer group"
       >
         <span id="toggleText">View Detailed Flow</span>
-        <i id="toggleIcon" class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform duration-300 group-hover:translate-y-0.5"></i>
+        <i
+          id="toggleIcon"
+          class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform duration-300 group-hover:translate-y-0.5"
+        ></i>
       </button>
-
     </div>
   </div>
 </section>
@@ -506,7 +511,7 @@
 
 <!-- Usability Testing Section -->
 <section
-  class="w-full bg-[#f2f8fd] py-16 px-6 md:px-12 font-mono text-slate-700"
+  class="w-full bg-[#EDF9FF] py-16 px-6 md:px-12 font-mono text-slate-700"
 >
   <div
     class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"
@@ -724,6 +729,302 @@
       <p class="text-[11px] text-slate-400 font-sans pt-1">
         Specific testing procedures and user data are omitted due to NDA
         restrictions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Key Design Decision Section -->
+<section
+  class="w-full bg-[#D3EFFF] py-16 px-6 md:px-12 font-mono text-slate-700"
+>
+  <div class="max-w-6xl mx-auto space-y-10">
+    <!-- Section Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight">
+      Key Design Decision
+    </h2>
+
+    <!-- Grid Layout 2x2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Card 1: Attention -->
+      <div
+        class="bg-white border border-[#d2ebfd] rounded-[32px] p-8 shadow-sm flex flex-col md:flex-row items-center gap-6"
+      >
+        <!-- Left Icon & Label -->
+        <div class="flex flex-col items-center text-center shrink-0 w-32">
+          <div
+            class="w-20 h-20 rounded-full bg-[#e0f1ff] text-[#5293c9] flex items-center justify-center text-3xl mb-3"
+          >
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <span class="font-bold text-slate-800 text-sm">Attention</span>
+        </div>
+
+        <!-- Right Timeline Content -->
+        <div class="relative pl-6 space-y-3 border-l border-[#bce2fe]">
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#5293c9] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              The primary goal is vacation and relaxation, not an educational
+              course.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#89bfe8] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Delivering essential information quickly without disrupting the
+              travel flow or feeling like a lesson.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#b2daf5] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Delivering fast, digestible information through interactive
+              content and subtle gamification rewarding users upon completion to
+              boost engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Diverse Users -->
+      <div
+        class="bg-white border border-[#d2ebfd] rounded-[32px] p-8 shadow-sm flex flex-col md:flex-row items-center gap-6"
+      >
+        <!-- Left Icon & Label -->
+        <div class="flex flex-col items-center text-center shrink-0 w-32">
+          <div
+            class="w-20 h-20 rounded-full bg-[#e0f1ff] text-[#5293c9] flex items-center justify-center text-3xl mb-3"
+          >
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <span class="font-bold text-slate-800 text-sm">Diverse Users</span>
+        </div>
+
+        <!-- Right Timeline Content -->
+        <div class="relative pl-6 space-y-3 border-l border-[#bce2fe]">
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#5293c9] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Serving a multi-cultural and multi-generational user base with
+              varying linguistic backgrounds.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#89bfe8] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Relying on a single text format or communication style creates
+              significant accessibility barriers.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#b2daf5] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Leveraging visual communication, multi-language support, and
+              simple interactions to minimize heavy text and break down
+              usability barriers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Accessibility Needs -->
+      <div
+        class="bg-white border border-[#d2ebfd] rounded-[32px] p-8 shadow-sm flex flex-col md:flex-row items-center gap-6"
+      >
+        <!-- Left Icon & Label -->
+        <div class="flex flex-col items-center text-center shrink-0 w-32">
+          <div
+            class="w-20 h-20 rounded-full bg-[#e0f1ff] text-[#5293c9] flex items-center justify-center text-3xl mb-3"
+          >
+            <i class="fa-solid fa-universal-access"></i>
+          </div>
+          <span class="font-bold text-slate-800 text-sm text-center"
+            >Accessibility Needs</span
+          >
+        </div>
+
+        <!-- Right Timeline Content -->
+        <div class="relative pl-6 space-y-3 border-l border-[#bce2fe]">
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#5293c9] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Spanning a broad age demographic, presenting diverse visual
+              capacities and varying degrees of digital familiarity.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#89bfe8] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Minimizes user cognitive load through intuitive, self-explanatory
+              design—guiding users seamlessly without requiring guesswork or
+              exploration.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#b2daf5] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Applies high contrast UI, clean and readable typography, explicit
+              visual cues, and straightforward navigation to ensure effortless
+              usability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Learning In Action -->
+      <div
+        class="bg-white border border-[#d2ebfd] rounded-[32px] p-8 shadow-sm flex flex-col md:flex-row items-center gap-6"
+      >
+        <!-- Left Icon & Label -->
+        <div class="flex flex-col items-center text-center shrink-0 w-32">
+          <div
+            class="w-20 h-20 rounded-full bg-[#e0f1ff] text-[#5293c9] flex items-center justify-center text-3xl mb-3"
+          >
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <span class="font-bold text-slate-800 text-sm text-center"
+            >Learning In Action</span
+          >
+        </div>
+
+        <!-- Right Timeline Content -->
+        <div class="relative pl-6 space-y-3 border-l border-[#bce2fe]">
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#5293c9] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Knowing what to do doesn't mean knowing how to do it; raw
+              information lacks real-world application and context.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#89bfe8] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Connecting to real-world scenarios so users can seamlessly apply
+              what they learn.
+            </p>
+          </div>
+          <div class="relative">
+            <span
+              class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#b2daf5] border-2 border-white"
+            ></span>
+            <p class="text-[11px] text-slate-600 font-sans leading-relaxed">
+              Scenario-Based Mini-Games: Interactive simulations that bridge the
+              gap between learning and real-world execution through hands-on
+              practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Outcome & Key Learning Section -->
+<section
+  class="w-full bg-white py-16 px-6 md:px-12 font-mono text-slate-700 flex justify-center"
+>
+  <div
+    class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch"
+  >
+    <!-- Card 1: Outcome (ปรับให้ขนาดและความสูงเท่ากับฝั่งขวา และข้อความขยับขึ้นมาด้านบน) -->
+    <div
+      class="bg-white border-2 border-[#d2ebfd] rounded-[36px] p-8 md:p-12 shadow-sm flex flex-col"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight mb-8"
+      >
+        Outcome
+      </h2>
+
+      <!-- Rounded Pills Grid / Stack -->
+      <div class="space-y-4 mb-6">
+        <div
+          class="w-full border-2 border-[#bce2fe] text-slate-700 font-medium py-3 px-6 rounded-full text-center text-sm bg-white shadow-xs"
+        >
+          Real Users
+        </div>
+        <div
+          class="w-full border-2 border-[#bce2fe] text-slate-700 font-medium py-3 px-6 rounded-full text-center text-sm bg-white shadow-xs"
+        >
+          Rewards Earned
+        </div>
+        <div
+          class="w-full border-2 border-[#bce2fe] text-slate-700 font-medium py-3 px-6 rounded-full text-center text-sm bg-white shadow-xs"
+        >
+          Ongoing Use
+        </div>
+      </div>
+
+      <!-- Description Paragraph (ขยับขึ้นมาต่อจากพิลล์ และเว้นระยะห่างด้านล่างให้สมดุล) -->
+      <p
+        class="text-xs md:text-sm text-slate-600 font-sans leading-relaxed mt-2"
+      >
+        The app reached real users who completed interactive activities and
+        earned rewards, and the project continues to be used to this day.
+      </p>
+    </div>
+
+    <!-- Card 2: Key Learning -->
+    <div
+      class="bg-[#eef7ff] border border-[#d2ebfd] rounded-[36px] p-8 md:p-12 shadow-sm flex flex-col"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight mb-8"
+      >
+        Key Learning
+      </h2>
+
+      <!-- Filled Blue Pills Grid / Stack -->
+      <div class="space-y-4 mb-6">
+        <div
+          class="w-full bg-[#d6edff] border border-[#bce2fe] text-[#2b5278] font-medium py-3 px-6 rounded-full text-center text-sm shadow-xs"
+        >
+          Applying Experience Design Beyond Games
+        </div>
+        <div
+          class="w-full bg-[#d6edff] border border-[#bce2fe] text-[#2b5278] font-medium py-3 px-6 rounded-full text-center text-sm shadow-xs"
+        >
+          Designing Beyond My Own Perspective
+        </div>
+        <div
+          class="w-full bg-[#d6edff] border border-[#bce2fe] text-[#2b5278] font-medium py-3 px-6 rounded-full text-center text-sm shadow-xs"
+        >
+          Designing for Diverse Users in Limited Time
+        </div>
+      </div>
+
+      <!-- Description Paragraph -->
+      <p
+        class="text-xs md:text-sm text-slate-600 font-sans leading-relaxed mt-2"
+      >
+        As my first foray into UX/UI design, this project leverages my
+        background in game design to craft a live, real-world digital
+        experience. It explores how to deliver intuitive, highly engaging
+        interactions for international tourists balancing cultural diversity,
+        multi-generational needs, and tight travel timeframes.
       </p>
     </div>
   </div>
