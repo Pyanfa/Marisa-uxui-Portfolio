@@ -1,7 +1,7 @@
 const letsFillFinalData = [
   {
     title: 'Main Menu',
-    mainImg: 'Asset/Picture/LetsFill/Main_Menu.png',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Main Menu.png',
     tags: ['Focal Point', "Fitts's Law"],
     bullets: [
       'ออกแบบปุ่มให้มีขนาดใหญ่เพื่อเพิ่มความสะดวกและลดความคลาดเคลื่อนในการสัมผัสบนอุปกรณ์พกพาซึ่งมีขนาดหน้าจอไม่ใหญ่มาก',
@@ -9,9 +9,9 @@ const letsFillFinalData = [
     ],
   },
   {
-    title: 'Comic Prologue',
-    mainImg: 'Asset/Picture/LetsFill/Comic_Prologue.png',
-    tags: ['Gamification', 'Storytelling', 'Engagement'],
+    title: 'Cut Scene',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Cut Scene.png',
+    tags: ['Public Friendly', 'Storytelling', 'Quick Access'],
     bullets: [
       'นำเสนอเนื้อหาในรูปแบบหนังสือการ์ตูนสั้นเพื่อกระตุ้นความสนใจของนักศึกษาทันตแพทย์ก่อนเริ่มฝึกปฏิบัติงาน',
       'วางปุ่มข้ามและปุ่มถัดไปให้อยู่ในตำแหน่งที่เข้าถึงได้ด้วยนิ้วโป้งทั้งสองฝั่ง',
@@ -19,71 +19,71 @@ const letsFillFinalData = [
   },
   {
     title: 'Character Selection',
-    mainImg: 'Asset/Picture/LetsFill/Character_Selection.png',
-    tags: ['Personalization', 'Clear Avatars'],
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Choose Character.png',
+    tags: ['Mental Model', 'Immediate Feedback', 'Clarity & Focus'],
     bullets: [
       'ระบบเลือกตัวละครอาจารย์และนักศึกษา เพื่อสร้างความรู้สึกมีส่วนร่วมและจำลองบรรยากาศคลินิก',
       'เน้นระยะห่างขององค์ประกอบเพื่อป้องกันการกดผิดพลาดบนหน้าจอสัมผัส',
     ],
   },
   {
-    title: 'Student ID Card',
-    mainImg: 'Asset/Picture/LetsFill/Student_ID.png',
-    tags: ['User Profile', 'Identity System'],
+    title: 'Sign In',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Sign In.png',
+    tags: ['Mental Model'],
     bullets: [
       'การสร้างบัตรประจำตัวนักศึกษาจำลองเพื่อบันทึกสถิติและประวัติการทำหัตถการ',
       'จัดวางช่องป้อนข้อมูลและปุ่มยืนยันให้อยู่ตรงกลางเพื่อความสมดุลด้านสายตา',
     ],
   },
   {
-    title: 'Clinical Hub & Map',
-    mainImg: 'Asset/Picture/LetsFill/Clinical_Hub.png',
-    tags: ['Navigation Hub', 'Visual Hierarchy'],
+    title: 'Examination',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Examination.png',
+    tags: ['Immediate Feedback', 'Contrast'],
     bullets: [
       'หน้าศูนย์รวมคลินิกจำลอง แยกหมวดหมู่การรักษาและระดับความยาก-ง่ายชัดเจน',
       'ใช้สัญลักษณ์ไอคอนช่วยสื่อความหมายเพื่อลดภาระการอ่านข้อความ (Cognitive Load)',
     ],
   },
   {
-    title: 'Patient Case History',
-    mainImg: 'Asset/Picture/LetsFill/Case_History.png',
-    tags: ['Medical Record', 'Information Architecture'],
+    title: 'Intraoral Examination',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Intraoral Examination.png',
+    tags: ['Contrast', 'Real Clinical Photos'],
     bullets: [
       'แสดงประวัติคนไข้ อาการสำคัญ และภาพถ่ายทางรังสีจำลองอย่างเป็นระบบ',
       'แบ่งส่วนข้อมูลด้วยคอนทราสต์สีสว่าง เพื่อให้นักศึกษาอ่านทำความเข้าใจได้รวดเร็ว',
     ],
   },
   {
-    title: 'Tooth Selection Chart',
-    mainImg: 'Asset/Picture/LetsFill/Tooth_Chart.png',
-    tags: ['Interactive Anatomy', 'Visual Cues'],
+    title: 'Tooth Examination',
+    mainImg: 'Asset/Picture/DentalFinal/Showcasel/Tooth Examination.png',
+    tags: ['Tool Recognition'],
     bullets: [
       'แผนภูมิช่องปากแบบโต้ตอบได้ ช่วยให้นักศึกษากำหนดตำแหน่งฟันซี่ที่จะทำการกรอได้อย่างแม่นยำ',
       'แสดงไฮไลต์ตำแหน่งรอยผูกรอยซี่ฟันด้วยสีตัดกันเพื่อการสังเกตที่ชัดเจน',
     ],
   },
   {
-    title: 'Treatment Plan Checklist',
-    mainImg: 'Asset/Picture/LetsFill/Treatment_Plan.png',
-    tags: ['Step-by-step Guide', 'Error Reduction'],
+    title: 'Diagnosis',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Diagnosis.png',
+    tags: ['Mental Model'],
     bullets: [
       'รายการลำดับขั้นตอนการรักษา ป้องกันการข้ามขั้นตอนสำคัญในคลินิกจริง',
       'ใช้ช่องติ๊กเลือกขนาดใหญ่เพื่อให้โต้ตอบได้ง่ายขณะถือเครื่องมือจำลอง',
     ],
   },
   {
-    title: 'Cavity Preparation Simulation',
-    mainImg: 'Asset/Picture/LetsFill/Cavity_Prep.png',
-    tags: ['Core Practice', 'Precise Control'],
+    title: 'Preparation',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Preparation.png',
+    tags: ['Focus-driven', 'Simulation'],
     bullets: [
       'จำลองการกรอฟันแบบเรียลไทม์ พร้อมการแสดงผลความลึกและความกว้างของโพรงฟัน',
       'จัดวางปุ่มเปลี่ยนหัวกรอและปรับความเร็วไว้ที่มุมล่างเพื่อให้เข้าถึงได้ทันที',
     ],
   },
   {
-    title: 'Immediate Feedback Loop',
-    mainImg: 'Asset/Picture/LetsFill/Feedback_Loop.png',
-    tags: ['2-Sec Feedback', 'Micro-interaction'],
+    title: 'Preparation Result',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Preparation Result.png',
+    tags: ['Gamification', 'Mental Reward'],
     bullets: [
       'แสดงผลการประเมินย่อยทันทีภายใน 2 วินาทีหลังจบสเต็ป เพื่อปรับแก้ไขเทคนิคได้ทันท่วงที',
       'ใช้การแจ้งเตือนแบบ Pop-up สีสดใสเพื่อดึงดูดความสนใจโดยไม่รบกวนสมาธิ',
@@ -91,17 +91,17 @@ const letsFillFinalData = [
   },
   {
     title: 'Error Alert & Correction Guidance',
-    mainImg: 'Asset/Picture/LetsFill/Error_Guidance.png',
-    tags: ['Constructive Warning', 'Visual Contrast'],
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Incorrect Answer Feedback.png',
+    tags: [' UI Consistency', 'UX Writing'],
     bullets: [
       'ระบบเตือนเมื่อกรอโดนเนื้อฟันส่วนดีหรือโพรงประสาทฟัน พร้อมคำแนะนำวิธีแก้ไข',
       'ใช้อิโมจิและข้อความสั้นกระชับ สื่อสารตรงประเด็นเพื่อความเข้าในการปฏิบัติ',
     ],
   },
   {
-    title: 'Step-by-Step Restoration Protocol',
-    mainImg: 'Asset/Picture/LetsFill/Restoration_Protocol.png',
-    tags: ['Clinical Standard', 'Structured Layout'],
+    title: 'Positive Feedbak',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Positive Feedbak.png',
+    tags: ['Contrast'],
     bullets: [
       'ขั้นตอนการอุดฟันตามมาตรฐานทันตกรรม แบ่งลำดับ Etching, Bonding และอุดวัสดุชัดเจน',
       'เน้นปุ่มสลับขั้นตอนด้วยความเข้มสีที่แตกต่างกันเพื่อบอกสถานะปัจจุบัน',
@@ -109,35 +109,36 @@ const letsFillFinalData = [
   },
   {
     title: 'Dental Material Application Simulation',
-    mainImg: 'Asset/Picture/LetsFill/Material_Application.png',
-    tags: ['Material Science', 'Interactive Simulation'],
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Etching.png',
+    tags: ['Guide', 'Interactive Simulation'],
     bullets: [
       'จำลองการใส่วัสดุอุดฟันและการขึ้นรูปทรงฟันตามหลักกายวิภาคศาสตร์',
       'แสดงแถบวัดปริมาณวัสดุช่วยให้นักศึกษาควบคุมปริมาณได้อย่างเหมาะสม',
     ],
   },
   {
-    title: 'Polishing & Curing Procedure',
-    mainImg: 'Asset/Picture/LetsFill/Polishing_Curing.png',
-    tags: ['Procedure Control', 'Timer Feedback'],
+    title: 'Syringe Operation Simulation',
+    mainImg:
+      'Asset/Picture/DentalFinal/Showcase/Syringe Operation Simulation.png',
+    tags: ['Simulation'],
     bullets: [
       'จำลองการฉายแสงฉายฉายวัสดุและการขัดแต่งผิวฟันให้เรียบเนียน',
       'แสดงตัวนับเวลาถอยหลังขนาดใหญ่ ชัดเจน อ่านง่ายขณะทำหัตถการ',
     ],
   },
   {
-    title: 'Suction & Ergonomics Control',
-    mainImg: 'Asset/Picture/LetsFill/Suction_Control.png',
-    tags: ['Assist Control', 'Usability'],
+    title: 'Light Curing',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Light Curing.png',
+    tags: ['Knowledge Retention', 'Visual Feedback'],
     bullets: [
       'ระบบจำลองการดูดน้ำและน้ำลายในช่องปาก ช่วยฝึกลำดับการทำงานร่วมกับผู้ช่วย',
       'จัดตำแหน่งเครื่องมือดูดไว้มุมด้านข้างเพื่อไม่ให้บดบังพื้นที่ทำงานหลัก',
     ],
   },
   {
-    title: 'Clinical Score Summary Card',
-    mainImg: 'Asset/Picture/LetsFill/Score_Summary.png',
-    tags: ['Performance Evaluation', 'Analytics Card'],
+    title: 'Result',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Result.png',
+    tags: ['Performance Evaluation', 'Feedback'],
     bullets: [
       'การ์ดสรุปคะแนนประเมินรวม รายงานจุดแข็งและจุดที่ต้องปรับปรุงแยกตามหัวข้อ',
       'มีปุ่มเรคคอร์ดสำหรับยื่นส่งผลการซ้อมให้อาจารย์ประจำวิชาตรวจเช็กได้สะดวก',
