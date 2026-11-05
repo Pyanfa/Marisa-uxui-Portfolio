@@ -1,7 +1,7 @@
 const letsFillFinalData = [
   {
     title: 'Main Menu',
-    mainImg: 'Asset/Picture/DentalFinal/Button/Main Menu.png',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Main Menu.png',
     tags: ['Focal Point', "Fitts's Law"],
     bullets: [
       'ออกแบบปุ่มให้มีขนาดใหญ่เพื่อเพิ่มความสะดวกและลดความคลาดเคลื่อนในการสัมผัสบนอุปกรณ์พกพาซึ่งมีขนาดหน้าจอไม่ใหญ่มาก',
