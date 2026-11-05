@@ -20,7 +20,7 @@ const finalDesignData = [
     ],
   },
   {
-    title: 'Character',
+    title: 'Avatar',
     mainImg: 'Asset/Picture/CoralFinal/Character.png',
     tags: ['Personalization', 'Interactive', 'User Engagement'],
     bullets: [
