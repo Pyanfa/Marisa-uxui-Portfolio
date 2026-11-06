@@ -57,7 +57,7 @@ const letsFillFinalData = [
   },
   {
     title: 'Tooth Examination',
-    mainImg: 'Asset/Picture/DentalFinal/Showcasel/Tooth Examination.png',
+    mainImg: 'Asset/Picture/DentalFinal/Showcase/Tooth Examination.png',
     tags: ['Tool Recognition'],
     desc: 'Pairs stylized illustrations of dental instruments with their official names to simulate real-world equipment selection, helping learners familiarize themselves with instrument names, procedures, and outcomes while avoiding confusion despite the cartoon aesthetic.',
   },
