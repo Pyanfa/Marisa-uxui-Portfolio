@@ -12,7 +12,7 @@ const finalDesignData = [
   {
     title: 'Sign In',
     mainImg: 'Asset/Picture/CoralFinal/SignIn.png',
-    tags: ['Accessibility', 'Multi-Language', 'Visual Cues'],
+    tags: ['Contrast', 'Focused Layout', 'Icons'],
     bullets: [
       'Improved form readability using white containers against a blue background to separate input fields and maintain focus.',
       'Added national flag icons to help users quickly identify languages or country codes without reading text.',
@@ -22,61 +22,45 @@ const finalDesignData = [
   {
     title: 'Avatar',
     mainImg: 'Asset/Picture/CoralFinal/Character.png',
-    tags: ['Personalization', 'Interactive', 'User Engagement'],
+    tags: ['Focused Layout', 'Tab based'],
     bullets: [
-      'แบ่งพื้นที่แสดงตัวละครขนาดใหญ่ตรงกลาง ให้เห็นผลลัพธ์การปรับแต่งทันที',
-      'แยกหมวดหมู่การแต่งตัว (ทรงผม, สีผิว/เพศ, เสื้อผ้า) เป็นแท็บชัดเจน ลดความสับสนและ ปรับแต่งได้รวดเร็ว',
+      'Features a large character display in the center for instant, real-time preview of customizations.',
+      'Organizes customization categories (hairstyles, skin tone/gender, outfits) into clear tabs to reduce clutter and speed up the styling process.',
     ],
   },
   {
     title: 'Greeting',
     mainImg: 'Asset/Picture/CoralFinal/Greeting.png',
-    tags: ['Storytelling', 'Short Content', 'Visual First'],
-    bullets: [
-      'สรุปเนื้อหาบทนำสั้น กระชับ ไม่รบกวนเวลาท่องเที่ยวของผู้ใช้งาน',
-      'ใช้อาร์ตสไตล์การ์ตูนในการเล่าเรื่องเพื่อลดความรู้สึกเหมือนเป็นบทเรียน',
-      'วางปุ่มถัดไปในตำแหน่งที่เข้าถึงง่ายด้วยนิ้วโป้ง',
-    ],
+    tags: ['Friendly Dialogue', 'UX Writing'],
+    desc: 'Uses casual, adventurous greetings instead of formal language to help users feel relaxed and avoid the feeling of entering a formal lesson.',
   },
   {
-    title: 'First Result',
+    title: 'Question Score',
     mainImg: 'Asset/Picture/CoralFinal/FirstResult.png',
-    tags: ['Baseline Assessment', 'Fast Interaction', 'Clear UI'],
+    tags: ['Icons', 'Dual CTA'],
     bullets: [
-      'แบบทดสอบก่อนเรียนสั้นๆ เพื่อประเมินความรู้พื้นฐานของผู้ใช้',
-      'แสดงเปอร์เซ็นต์ความคืบหน้าอย่างชัดเจนเพื่อลด Cognitive Load',
-      'ตัวเลือกขนาดใหญ่ กดง่าย ตอบสนองรวดเร็ว',
+      'Places a large score display in the center so users can instantly see their question results.',
+      'ummarizes personal information in a white box with accompanying icons, allowing users to quickly and easily verify its accuracy.',
+      'Clearly distinguishes the two next steps using color-coded options (Mini-game / Rewatch Video) so users can easily decide whether to continue playing or review the content, enabling quick selection.',
     ],
   },
   {
     title: 'Mini Game',
     mainImg: 'Asset/Picture/CoralFinal/MiniGame.png',
-    tags: ['Integrated Video', 'One-Stop Stream', 'Engagement'],
-    bullets: [
-      'รวบรวมเนื้อหาวิดีโอสั้นเข้าด้วยกันเป็นคลิปเดียวต่อเนื่องเพื่อลดระยะเวลาเรียนรู้',
-      'ตัดคำถามที่ไม่จำเป็นออก เพื่อรักษาความต่อเนื่องในการรับชม',
-      'มีซับไตเติิลภาษาต่างๆ ให้เลือกเปลี่ยนได้ตามต้องการ',
-    ],
+    tags: ['Gamification'],
+    desc: 'Uses gamification principles to design learning experiences through active participation, making learning fun and natural without feeling like studying.',
   },
   {
     title: 'Mini Game Result',
     mainImg: 'Asset/Picture/CoralFinal/MiniGameResult.png',
-    tags: ['Knowledge Check', 'Instant Feedback', 'Gamification'],
-    bullets: [
-      'ทบทวนความรู้หลังรับชมสื่อด้วยคำถามสั้นๆ ประยุกต์ใช้ในสถานการณ์จริง',
-      'ระบบให้ข้อเสนอแนะทันที (Instant Feedback) เมื่อตอบคำถาม',
-      'ใช้โทนสีและภาพประกอบที่ช่วยกระตุ้นการจดจำ',
-    ],
+    tags: ['Gamification'],
+    desc: 'Displays minigame results and provides clear options for players regardless of whether they pass or fail, reducing frustration and awkwardness.',
   },
   {
     title: 'Reward',
     mainImg: 'Asset/Picture/CoralFinal/Reward.png',
-    tags: ['Reward System', 'Satisfaction', 'Completion'],
-    bullets: [
-      'หน้าจอแสดงความยินดีพร้อมมอบสิทธิประโยชน์/รางวัลเพื่อสร้างความพึงพอใจสูงสุด',
-      'แสดงปุ่มบันทึกหรือแชร์ความสำเร็จได้ทันที',
-      'ออกแบบ UI สไตล์สดใสสร้างความประทับใจส่งท้ายก่อนจบการใช้งาน',
-    ],
+    tags: ['Gamification', 'Reward'],
+    desc: 'Applies gamification principles by offering post-activity rewards to motivate learning and keep players engaged through fun rather than forced studying. These digital rewards streamline the claiming process and provide immediately usable items for the users.',
   },
 ];
 
@@ -86,32 +70,52 @@ function selectFinalDesign(index) {
 
   // 1. เปลี่ยนภาพใหญ่พร้อม Fading Effect
   const mainImg = document.getElementById('final-design-main-img');
-  mainImg.style.opacity = '0';
-  setTimeout(() => {
-    mainImg.src = data.mainImg;
-    mainImg.style.opacity = '1';
-  }, 150);
+  if (mainImg) {
+    mainImg.style.opacity = '0';
+    setTimeout(() => {
+      mainImg.src = data.mainImg;
+      mainImg.style.opacity = '1';
+    }, 150);
+  }
 
   // 2. อัปเดตชื่อ Subtitle
-  document.getElementById('final-design-title-text').textContent = data.title;
+  const titleText = document.getElementById('final-design-title-text');
+  if (titleText) {
+    titleText.textContent = data.title;
+  }
 
   // 3. อัปเดต Tags
   const tagsContainer = document.getElementById('final-design-tags');
-  tagsContainer.innerHTML = data.tags
-    .map(
-      (tag) =>
-        `<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs">● ${tag}</span>`
-    )
-    .join('');
+  if (tagsContainer && data.tags) {
+    tagsContainer.innerHTML = data.tags
+      .map(
+        (tag) =>
+          `<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs">● ${tag}</span>`
+      )
+      .join('');
+  }
 
-  // 4. อัปเดต Bullet Points
+  // 4. อัปเดตคำอธิบาย (รองรับทั้ง bullets และ desc แบบยืดหยุ่น)
   const bulletsContainer = document.getElementById('final-design-bullets');
-  bulletsContainer.innerHTML = data.bullets
-    .map(
-      (b) =>
-        `<li class="flex items-start space-x-2"><span class="text-slate-900 mt-1">•</span><span>${b}</span></li>`
-    )
-    .join('');
+  if (bulletsContainer) {
+    let contentHTML = '';
+
+    // กรณีมี bullets เป็น Array หลายข้อ
+    if (data.bullets && Array.isArray(data.bullets)) {
+      contentHTML = data.bullets
+        .map(
+          (b) =>
+            `<li class="flex items-start space-x-2"><span class="text-slate-900 mt-1">•</span><span>${b}</span></li>`
+        )
+        .join('');
+    }
+    // กรณีมี desc เป็นข้อความเดี่ยว
+    else if (data.desc) {
+      contentHTML = `<p class="text-slate-700 leading-relaxed">${data.desc}</p>`;
+    }
+
+    bulletsContainer.innerHTML = contentHTML;
+  }
 
   // 5. ไฮไลต์เส้นขอบของรูปเล็กที่เลือก
   const buttons = document.querySelectorAll('.fd-thumb-btn img');
@@ -137,4 +141,5 @@ function selectFinalDesign(index) {
     }
   });
 }
+
 window.selectFinalDesign = selectFinalDesign;

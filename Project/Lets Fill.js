@@ -4,8 +4,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Main Menu.png',
     tags: ['Focal Point', "Fitts's Law"],
     bullets: [
-      'ออกแบบปุ่มให้มีขนาดใหญ่เพื่อเพิ่มความสะดวกและลดความคลาดเคลื่อนในการสัมผัสบนอุปกรณ์พกพาซึ่งมีขนาดหน้าจอไม่ใหญ่มาก',
-      'จัดวางปุ่มที่สำคัญและใช้งานบ่อยไว้ด้านบน เพื่อลดเวลาในการค้นหาและเข้าถึงฟังก์ชันได้ รวดเร็วขึ้น',
+      'Designs large buttons to improve convenience and minimize mis-taps on mobile devices with smaller screens.',
+      'Places essential and frequently used buttons at the top to reduce search time and allow quicker access to key functions.',
     ],
   },
   {
@@ -13,8 +13,9 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Cut Scene.png',
     tags: ['Public Friendly', 'Storytelling', 'Quick Access'],
     bullets: [
-      'นำเสนอเนื้อหาในรูปแบบหนังสือการ์ตูนสั้นเพื่อกระตุ้นความสนใจของนักศึกษาทันตแพทย์ก่อนเริ่มฝึกปฏิบัติงาน',
-      'วางปุ่มข้ามและปุ่มถัดไปให้อยู่ในตำแหน่งที่เข้าถึงได้ด้วยนิ้วโป้งทั้งสองฝั่ง',
+      'Utilizes short comic videos with visual symptoms instead of verbal descriptions, helping medical professionals quickly identify key issues.',
+      'Omits voiceovers and narration for public-friendly usage, enabling players to enjoy the content anywhere without headphones.',
+      'Distills cutscene content into concise comic panels to minimize downtime and get users into the main game faster.',
     ],
   },
   {
@@ -22,8 +23,9 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Choose Character.png',
     tags: ['Mental Model', 'Immediate Feedback', 'Clarity & Focus'],
     bullets: [
-      'ระบบเลือกตัวละครอาจารย์และนักศึกษา เพื่อสร้างความรู้สึกมีส่วนร่วมและจำลองบรรยากาศคลินิก',
-      'เน้นระยะห่างขององค์ประกอบเพื่อป้องกันการกดผิดพลาดบนหน้าจอสัมผัส',
+      'Applies a glow outline to selected characters for instant visual feedback and clear confirmation without extra text.',
+      'Places characters on a single plane against a clean background to reduce distractions and help users focus on choosing.',
+      'Dresses the characters in Chiang Mai University dental student uniforms to resonate directly with the primary target audience.',
     ],
   },
   {
@@ -31,8 +33,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Sign In.png',
     tags: ['Mental Model'],
     bullets: [
-      'การสร้างบัตรประจำตัวนักศึกษาจำลองเพื่อบันทึกสถิติและประวัติการทำหัตถการ',
-      'จัดวางช่องป้อนข้อมูลและปุ่มยืนยันให้อยู่ตรงกลางเพื่อความสมดุลด้านสายตา',
+      'Models the registration card after actual Chiang Mai University student IDs to foster a sense of immersion and engagement among learners.',
+      'Positions navigation buttons (Back / Next) prominently at the bottom for easy access, allowing learners to seamlessly return for character edits or proceed to the next step.',
     ],
   },
   {
@@ -40,8 +42,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Examination.png',
     tags: ['Immediate Feedback', 'Contrast'],
     bullets: [
-      'หน้าศูนย์รวมคลินิกจำลอง แยกหมวดหมู่การรักษาและระดับความยาก-ง่ายชัดเจน',
-      'ใช้สัญลักษณ์ไอคอนช่วยสื่อความหมายเพื่อลดภาระการอ่านข้อความ (Cognitive Load)',
+      'Adds a subtle up-and-down animation to the Click Here badge to draw attention and highlight interactive spots.',
+      'Uses a high-contrast glowing outline around selected features for instant visual feedback and clear selection confirmation.',
     ],
   },
   {
@@ -49,35 +51,29 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Intraoral Examination.png',
     tags: ['Contrast', 'Real Clinical Photos'],
     bullets: [
-      'แสดงประวัติคนไข้ อาการสำคัญ และภาพถ่ายทางรังสีจำลองอย่างเป็นระบบ',
-      'แบ่งส่วนข้อมูลด้วยคอนทราสต์สีสว่าง เพื่อให้นักศึกษาอ่านทำความเข้าใจได้รวดเร็ว',
+      'Uses real intraoral photos and diagnostic X-rays to prevent lesion identification errors and provide realistic diagnostic practice.',
+      'Uses an animated yellow arrow in high contrast with the blue background to guide user focus directly to image-zoom interaction points.',
     ],
   },
   {
     title: 'Tooth Examination',
     mainImg: 'Asset/Picture/DentalFinal/Showcasel/Tooth Examination.png',
     tags: ['Tool Recognition'],
-    bullets: [
-      'แผนภูมิช่องปากแบบโต้ตอบได้ ช่วยให้นักศึกษากำหนดตำแหน่งฟันซี่ที่จะทำการกรอได้อย่างแม่นยำ',
-      'แสดงไฮไลต์ตำแหน่งรอยผูกรอยซี่ฟันด้วยสีตัดกันเพื่อการสังเกตที่ชัดเจน',
-    ],
+    desc: 'Pairs stylized illustrations of dental instruments with their official names to simulate real-world equipment selection, helping learners familiarize themselves with instrument names, procedures, and outcomes while avoiding confusion despite the cartoon aesthetic.',
   },
   {
     title: 'Diagnosis',
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Diagnosis.png',
     tags: ['Mental Model'],
-    bullets: [
-      'รายการลำดับขั้นตอนการรักษา ป้องกันการข้ามขั้นตอนสำคัญในคลินิกจริง',
-      'ใช้ช่องติ๊กเลือกขนาดใหญ่เพื่อให้โต้ตอบได้ง่ายขณะถือเครื่องมือจำลอง',
-    ],
+    desc: 'Simulates a patient chart format to build familiarity, transforming question-answering into a realistic clinical charting experience.',
   },
   {
     title: 'Preparation',
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Preparation.png',
     tags: ['Focus-driven', 'Simulation'],
     bullets: [
-      'จำลองการกรอฟันแบบเรียลไทม์ พร้อมการแสดงผลความลึกและความกว้างของโพรงฟัน',
-      'จัดวางปุ่มเปลี่ยนหัวกรอและปรับความเร็วไว้ที่มุมล่างเพื่อให้เข้าถึงได้ทันที',
+      'Designs the interaction to allow dragging with a stylus tip or finger over decayed areas, simulating authentic tooth preparation and drilling.',
+      'Uses distinct colors for special action buttons (e.g., light purple Restart, green Confirm) to prevent accidental mis-clicks and keep players focused on gameplay skills.',
     ],
   },
   {
@@ -85,8 +81,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Preparation Result.png',
     tags: ['Gamification', 'Mental Reward'],
     bullets: [
-      'แสดงผลการประเมินย่อยทันทีภายใน 2 วินาทีหลังจบสเต็ป เพื่อปรับแก้ไขเทคนิคได้ทันท่วงที',
-      'ใช้การแจ้งเตือนแบบ Pop-up สีสดใสเพื่อดึงดูดความสนใจโดยไม่รบกวนสมาธิ',
+      'Shows instant accuracy scores upon step completion to provide immediate feedback and help learners gauge their performance.',
+      'Pairs star rewards with percentage scores to drive motivation, enhance achievement feelings, and promote repeat practice.',
     ],
   },
   {
@@ -94,8 +90,9 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Incorrect Answer Feedback.png',
     tags: [' UI Consistency', 'UX Writing'],
     bullets: [
-      'ระบบเตือนเมื่อกรอโดนเนื้อฟันส่วนดีหรือโพรงประสาทฟัน พร้อมคำแนะนำวิธีแก้ไข',
-      'ใช้อิโมจิและข้อความสั้นกระชับ สื่อสารตรงประเด็นเพื่อความเข้าในการปฏิบัติ',
+      'Instantly notifies users upon selecting an incorrect answer while offering flexible choices to either retry or review the lesson.',
+      'Integrates familiar home icons into large buttons to maintain semantic continuity and ensure instant comprehension.',
+      'Uses friendly-toned centered pop-ups to ease user pressure and encourage learning through constructive feedback.',
     ],
   },
   {
@@ -103,8 +100,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Positive Feedbak.png',
     tags: ['Contrast'],
     bullets: [
-      'ขั้นตอนการอุดฟันตามมาตรฐานทันตกรรม แบ่งลำดับ Etching, Bonding และอุดวัสดุชัดเจน',
-      'เน้นปุ่มสลับขั้นตอนด้วยความเข้มสีที่แตกต่างกันเพื่อบอกสถานะปัจจุบัน',
+      'Provides instant positive feedback for correct answers to reinforce academic accuracy and boost confidence.',
+      'Links real-world treatment procedures through guiding prompts to help learners systematically memorize clinical workflow sequences.',
     ],
   },
   {
@@ -112,8 +109,8 @@ const letsFillFinalData = [
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Etching.png',
     tags: ['Guide', 'Interactive Simulation'],
     bullets: [
-      'จำลองการใส่วัสดุอุดฟันและการขึ้นรูปทรงฟันตามหลักกายวิภาคศาสตร์',
-      'แสดงแถบวัดปริมาณวัสดุช่วยให้นักศึกษาควบคุมปริมาณได้อย่างเหมาะสม',
+      'Displays a clear instruction box to immediately inform learners of the objective and interaction steps for the current phase.',
+      'Features touch and stylus dragging for acid etchant application to simulate realistic clinical techniques and reinforce motor skills.',
     ],
   },
   {
@@ -122,27 +119,21 @@ const letsFillFinalData = [
       'Asset/Picture/DentalFinal/Showcase/Syringe Operation Simulation.png',
     tags: ['Simulation'],
     bullets: [
-      'จำลองการฉายแสงฉายฉายวัสดุและการขัดแต่งผิวฟันให้เรียบเนียน',
-      'แสดงตัวนับเวลาถอยหลังขนาดใหญ่ ชัดเจน อ่านง่ายขณะทำหัตถการ',
+      'Simulates three-way syringe controls (water vs. air) to build tool familiarity and hands-on confidence prior to clinical entry.',
+      'Uses distinct illustrations and icon labels for water and air buttons to eliminate confusion and ensure precise control identification.',
     ],
   },
   {
     title: 'Light Curing',
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Light Curing.png',
     tags: ['Knowledge Retention', 'Visual Feedback'],
-    bullets: [
-      'ระบบจำลองการดูดน้ำและน้ำลายในช่องปาก ช่วยฝึกลำดับการทำงานร่วมกับผู้ช่วย',
-      'จัดตำแหน่งเครื่องมือดูดไว้มุมด้านข้างเพื่อไม่ให้บดบังพื้นที่ทำงานหลัก',
-    ],
+    desc: 'Introduces a 2 second screen hold after an answer is selected, allowing learners a brief pause to process feedback, review their accuracy, and reinforce knowledge retention for practical application.',
   },
   {
     title: 'Result',
     mainImg: 'Asset/Picture/DentalFinal/Showcase/Result.png',
     tags: ['Performance Evaluation', 'Feedback'],
-    bullets: [
-      'การ์ดสรุปคะแนนประเมินรวม รายงานจุดแข็งและจุดที่ต้องปรับปรุงแยกตามหัวข้อ',
-      'มีปุ่มเรคคอร์ดสำหรับยื่นส่งผลการซ้อมให้อาจารย์ประจำวิชาตรวจเช็กได้สะดวก',
-    ],
+    desc: 'Displays detailed performance statistics and stage-by-stage results, empowering learners to analyze their progress, targetedly practice, and achieve clinical mastery.',
   },
 ];
 
@@ -152,32 +143,60 @@ function selectLfDesign(index) {
 
   // 1. เปลี่ยนภาพใหญ่พร้อมเอฟเฟกต์ Fade
   const mainImg = document.getElementById('lf-final-main-img');
-  mainImg.style.opacity = '0';
-  setTimeout(() => {
-    mainImg.src = data.mainImg;
-    mainImg.style.opacity = '1';
-  }, 150);
+  if (mainImg) {
+    mainImg.style.opacity = '0';
+    setTimeout(() => {
+      mainImg.src = data.mainImg;
+      mainImg.style.opacity = '1';
+    }, 150);
+  }
 
   // 2. เปลี่ยนข้อความหัวข้อ
-  document.getElementById('lf-final-title-text').textContent = data.title;
+  const titleText = document.getElementById('lf-final-title-text');
+  if (titleText) {
+    titleText.textContent = data.title;
+  }
 
   // 3. เปลี่ยน Tags
   const tagsContainer = document.getElementById('lf-final-tags');
-  tagsContainer.innerHTML = data.tags
-    .map(
-      (tag) =>
-        `<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs">● ${tag}</span>`
-    )
-    .join('');
+  if (tagsContainer && data.tags) {
+    tagsContainer.innerHTML = data.tags
+      .map(
+        (tag) =>
+          `<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/60 text-slate-700 shadow-xs">● ${tag}</span>`
+      )
+      .join('');
+  }
 
-  // 4. เปลี่ยนข้อความคำอธิบาย Bullet Points
+  // 4. เปลี่ยนข้อความคำอธิบาย (แยกประเภทระหว่าง bullets กับ desc อย่างชัดเจน)
   const bulletsContainer = document.getElementById('lf-final-bullets');
-  bulletsContainer.innerHTML = data.bullets
-    .map(
-      (b) =>
-        `<li class="flex items-start space-x-2"><span class="text-slate-900 mt-1">•</span><span>${b}</span></li>`
-    )
-    .join('');
+  if (bulletsContainer) {
+    let contentHTML = '';
+
+    // กรณีมี bullets เป็น Array หลายข้อ (ให้ใส่ Bullet ปกติ)
+    if (data.bullets && Array.isArray(data.bullets)) {
+      contentHTML = `
+        <ul class="space-y-2">
+          ${data.bullets
+            .map(
+              (b) =>
+                `<li class="flex items-start space-x-2"><span class="text-slate-900 mt-1">•</span><span>${b}</span></li>`
+            )
+            .join('')}
+        </ul>
+      `;
+    }
+    // กรณีมี desc เป็น String เดี่ยว (แสดงเป็นข้อความปกติ ไม่มี Bullet)
+    else if (data.desc) {
+      contentHTML = `<p class="text-slate-700">${data.desc}</p>`;
+    }
+    // กรณีมี descs (เผื่อสะกดผิด)
+    else if (data.descs) {
+      contentHTML = `<p class="text-slate-700">${data.descs}</p>`;
+    }
+
+    bulletsContainer.innerHTML = contentHTML;
+  }
 
   // 5. ไฮไลต์เส้นขอบ Thumbnail ตัวที่เลือก
   const buttons = document.querySelectorAll('.lf-thumb-btn img');
@@ -191,7 +210,7 @@ function selectLfDesign(index) {
     }
   });
 
-  // 6. อัปเดตจุด Dots ทั้ง 16 จุด
+  // 6. อัปเดตจุด Dots ทั้งหมด
   const dots = document.querySelectorAll('#lf-final-dots span');
   dots.forEach((dot, i) => {
     if (i === index) {
@@ -221,9 +240,11 @@ function scrollLfThumbnails(direction) {
   if (!container) return;
   const scrollAmount = 220;
   if (direction === 'left') {
-    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    container.scrollLeft -= scrollAmount;
   } else {
-    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    container.scrollLeft += scrollAmount;
   }
 }
+
 window.selectLfDesign = selectLfDesign;
+window.scrollLfThumbnails = scrollLfThumbnails;

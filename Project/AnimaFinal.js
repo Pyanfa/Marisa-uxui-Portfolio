@@ -3,55 +3,61 @@ const woaFinalData = [
     title: 'Main Menu',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Main Menu.png',
     tags: ['Primary CTA'],
-    desc: 'จัดวางปุ่ม Play ไว้ใต้โลโก้ เพื่อให้เป็นจุดสนใจหลักและช่วยให้ผู้เล่นค้นหาปุ่มเริ่มเกมได้ทันที สะดวกต่อการเริ่มเล่น และออกแบบให้เข้ากับเทศกาลฮาโลวีนโดยผสมผสานกลิ่นอายวัฒนธรรมสากลและไทยดั้งเดิม โดยฟักทองแกะสลักด้วยลายแบบไทยๆ',
+    desc: 'Places the Play button right below the logo to serve as the main focal point, allowing players to instantly find it for a smooth start. The design embraces the Halloween theme by blending global and traditional Thai cultures through pumpkin carvings featuring traditional Thai patterns.',
   },
   {
     title: 'Stage Selection',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Stage Selection.png',
     tags: ['Level Progression'],
-    desc: 'ออกแบบหน้าเลือกด่านให้อ่านง่าย ชัดเจน แสดงรายละเอียดและภารกิจของแต่ละด่านเพื่อให้ผู้เล่นเตรียมตัวก่อนเริ่มเกมได้อย่างมีประสิทธิภาพ',
+    desc: 'The game consists of 6 levels, starting with a tutorial that introduces game mechanics and elements before moving into actual gameplay. Each level gradually increases in difficulty and complexity, allowing players to learn and develop their skills step by step.',
   },
   {
     title: 'Mission Briefing',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Mission Briefing.png',
     tags: ['Mission Briefing'],
-    desc: 'หน้าแสดงสถานะตัวละคร และช่องจัดเก็บไอเทมที่ออกแบบมาให้ค้นหาและใช้งานง่าย ลดความซับซ้อนขณะเล่นเกม',
+    desc: 'In the final stage, existing mechanics are adapted with increased complexity to create a fresh gameplay experience. Mission objectives are introduced through an immediate card popup upon entering the level, ensuring players understand their goals before starting.',
   },
   {
     title: 'Item Economy',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Item Economy.png',
     tags: ['Game Balance', 'Iterative Design'],
-    desc: 'มุมมองบรรยากาศขณะเล่นจริง ออกแบบอินเทอร์เฟซให้น้อยที่สุด (Minimal HUD) เพื่อไม่ให้บดบังทัศนียภาพและเพิ่มความอินกับบรรยากาศสยองขวัญ',
+    bullets: [
+      'Based on playtests, item boxes containing specific counter-items and hazard hints are placed near enemies to increase player interaction.',
+      'Tweaked the mechanics to let players carry items over to subsequent levels, capped at 5 per item type for game balance.',
+    ],
   },
   {
     title: 'Environmental Navigation',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Environmental Navigation.png',
     tags: ['Visual Focus', 'Diegetic Guidance'],
-    desc: 'การนำทางภายในฉากด้วยแสงสว่างและองค์ประกอบสิ่งแวดล้อม ช่วยแนะแนวทางผู้เล่นโดยไม่ต้องพึ่งพามินิแมปขนาดใหญ่',
+    desc: "Utilizes lighting and decorative elements, such as red threads on the floor, to guide player's eyes toward the mission area—the ceremonial courtyard—making it easier for them to spot and locate objectives.",
   },
   {
     title: 'Level Exploration & Randomization',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Level Exploration.png',
     tags: ['Replay Value', 'Randomized', 'Player Agency'],
-    desc: 'องค์ประกอบที่มีปฏิสัมพันธ์ได้ในฉากจะแสดงสัญลักษณ์และเอฟเฟกต์การตอบสนองที่ชัดเจนเมื่อผู้เล่นเข้าใกล้',
+    desc: 'Designs multiple paths with randomized item drops and mission item locations to increase gameplay variety and encourage replayability.',
   },
   {
     title: 'Environmental Mechanics',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Environment.png',
     tags: ['Replay Value', 'Player Agency', 'Environmental Affordance'],
-    desc: 'การใช้แสงสว่างเฉพาะจุดในการสร้างบรรยากาศความน่ากลัว พร้อมทั้งใช้จัดลำดับความสำคัญของสายตาผู้เล่นไปยังจุดปริศนา',
+    desc: 'Designs the environment to allow players to utilize spaces for unique strategies, such as circular running routes that help them outsmart enemies and freely plan their movements.',
   },
   {
     title: 'Combat Feedback',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Feedback.png',
     tags: ['Immediate Feedback', 'Visual Juiciness'],
-    desc: 'ฉากเหตุการณ์สำคัญภายในเกม เพิ่มความตื่นเต้นด้วยแสงสีและการเปลี่ยนแปลงของสภาพแวดล้อมอย่างฉับพลัน',
+    desc: 'When players attack an enemy, it triggers a fear animation accompanied by visual effects to clearly communicate the impact of the attack, while enhancing the sense of gratification and player satisfaction.',
   },
   {
     title: 'Leaderboard',
     mainImg: 'Asset/Picture/AnimaFinal/Showcase/Leaderboard.png',
     tags: ['Thematic UI Integration', 'Replay Motivation'],
-    desc: 'สมุดบันทึกเบาะแสและเนื้อเรื่องจำลองสไตล์หนังสือเก่า ช่วยให้ผู้เล่นย้อนอ่านเนื้อหาและไขปริศนาได้สะดวกยิ่งขึ้น',
+    bullets: [
+      'Features a best-time leaderboard to foster competition and encourage players to break their own records.',
+      'Styled the leaderboard with old paper textures and bloodstains to match the abandoned art school horror theme and enhance immersion.',
+    ],
   },
 ];
 
@@ -79,8 +85,20 @@ function selectWoaDesign(index) {
     )
     .join('');
 
-  // 4. เปลี่ยนข้อความอธิบาย
-  document.getElementById('woa-final-desc').textContent = data.desc;
+  // 4. เปลี่ยนข้อความอธิบาย (รองรับทั้ง desc และ bullets)
+  const descContainer = document.getElementById('woa-final-desc');
+
+  if (data.bullets && Array.isArray(data.bullets)) {
+    // ถ้ามี bullets ให้สร้างเป็นรายการ <ul> <li>
+    descContainer.innerHTML = `
+      <ul class="list-disc pl-5 space-y-1">
+        ${data.bullets.map((bullet) => `<li>${bullet}</li>`).join('')}
+      </ul>
+    `;
+  } else {
+    // ถ้าเป็น desc ปกติ
+    descContainer.innerHTML = data.desc || '';
+  }
 
   // 5. ไฮไลต์เส้นขอบ Thumbnail ตัวที่เลือก
   const buttons = document.querySelectorAll('.woa-thumb-btn img');
