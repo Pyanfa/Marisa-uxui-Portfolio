@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    name: 'Marisa Wangsai',
+    name: 'Marisa Sorawangsai',
     'nav.title': 'Portfolio',
     'nav.home': 'Home',
     'nav.about': 'About Me',
@@ -16,7 +16,7 @@ const translations = {
     'home.knowMe': 'Get to know me better',
   },
   th: {
-    name: 'มาริษา วังซ้าย',
+    name: 'มาริสา สรวังซ้าย',
     'nav.title': 'แฟ้มสะสมผลงาน',
     'nav.home': 'หน้าแรก',
     'nav.about': 'เกี่ยวกับฉัน',
