@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    'name': 'Marisa Sorawangsai',
+    name: 'Marisa Sorawangsai',
     'nav.title': 'Portfolio',
     'nav.home': 'Home',
     'nav.about': 'About Me',
@@ -13,10 +13,13 @@ const translations = {
     'home.readMore': 'Click To Read More',
     'home.hello': 'Hello, I am',
     'home.graduate': 'Graduate',
+    'home.bachelor.degree': 'Bachelor of Science (B.Sc.),',
+    'home.bachelor.faculty': 'College of Arts, Media and Technology,',
+    'home.bachelor.university': 'Chiang Mai University',
     'home.knowMe': 'Get to know me better',
   },
   th: {
-    'name': 'มาริสา สรวังซ้าย',
+    name: 'มาริสา สรวังซ้าย',
     'nav.title': 'แฟ้มสะสมผลงาน',
     'nav.home': 'หน้าแรก',
     'nav.about': 'เกี่ยวกับฉัน',
@@ -28,9 +31,12 @@ const translations = {
       'แก้ปัญหาผ่านกระบวนการคิดแบบเกมดีไซน์ แปลงความท้าทายให้กลายเป็นประสบการณ์ที่น่าติดตาม กระตุ้นความอยากรู้อยากเห็นและการมีส่วนร่วม',
     'home.recentProjects': 'ผลงาน',
     'home.readMore': 'คลิกเพื่ออ่านเพิ่มเติม',
-    'home.hello': 'สวัสดีครับ, ผมชื่อ',
+    'home.hello': 'สวัสดีค่ะ, ดิฉัน',
     'home.graduate': 'ประวัติการศึกษา',
-    'home.knowMe': 'ทำความรู้จักฉันเพิ่มเติม',
+    'home.bachelor.degree': 'วิทยาศาสตร์บัณฑิต (ว.ทบ.),',
+    'home.bachelor.faculty': 'วิทยาลัยศิลปะ สื่อ และเทคโนโลยี,',
+    'home.bachelor.university': 'มหาวิทยาลัยเชียงใหม่',
+    'home.knowMe': 'รู้จักฉันเพิ่มเติม',
   },
 };
 
