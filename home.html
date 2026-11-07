@@ -319,12 +319,21 @@
                 class="flex items-center space-x-2 text-gray-500 font-semibold text-sm mb-1"
               >
                 <i class="fa-solid fa-graduation-cap text-base"></i>
-                <span>Graduate</span>
+                <span data-i18n="home.graduate"></span>
               </div>
               <p class="text-[12px] text-gray-600 leading-tight">
-                Bachelor of Science (B.Sc.)<br />
-                College of Arts, Media and Technology,<br />
-                Chiang Mai University
+                <!-- บรรทัดที่ 1: วุฒิการศึกษา -->
+                <span data-i18n="home.bachelor.degree"
+                  >Bachelor of Science (B.Sc.),</span
+                ><br />
+                <!-- บรรทัดที่ 2: คณะ -->
+                <span data-i18n="home.bachelor.faculty"
+                  >College of Arts, Media and Technology,</span
+                ><br />
+                <!-- บรรทัดที่ 3: มหาวิทยาลัย -->
+                <span data-i18n="home.bachelor.university"
+                  >Chiang Mai University</span
+                >
               </p>
             </div>
 
@@ -385,7 +394,7 @@
               onclick="switchTab('about')"
               class="action-btn px-6 py-2.5 text-sm font-medium rounded-full flex items-center space-x-2 shadow-sm focus:outline-none"
             >
-              <span>Get to know me better</span>
+              <span data-i18n="home.knowMe"></span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
           </div>
